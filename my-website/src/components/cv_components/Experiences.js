@@ -14,17 +14,18 @@ class Experiences extends React.Component {
       
         <div className={classes.experiences}>
             <Box >
-                <Flex> 
+                {/* <Flex> </Flex> */}
+                
                     <div className={classes.exp_where}>
                     {this.props.where} 
                     </div>
-                    <Spacer/>
+                    <div className={classes.lil_dash}/>
+                    
                     <div className={classes.exp_when}>
                     {this.props.when}
                     </div>
-                    </Flex>
-                
-                {this.props.abbreviated ? <div/> : 
+                    
+                {/* {this.props.abbreviated ? <div/> : 
                     <div>
                     <div className={classes.lil_dash}/>
                     {this.props.what.map((sentence) =>(
@@ -34,7 +35,7 @@ class Experiences extends React.Component {
                     </Text>
                 ))}
                 </div>
-               }
+               } */}
           </Box>
       </div>
     

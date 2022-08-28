@@ -56,7 +56,7 @@ class Souvenir extends React.Component {
       return (
         <div id ="report">
         <div className={classes.souvenir}>
-            <Box > {/* w={[250, 300, 400]} */}
+            <Box > 
             <div className={classes.so_name}> Elise Carman </div>
             <Flex>
                 <Box>
@@ -68,7 +68,6 @@ class Souvenir extends React.Component {
             </Flex>
    
             <textarea className={classes.so_comment} placeholder={"Type in your thoughts"}>
-            {/* Type in your thoughts */}
             </textarea>
             
             
@@ -88,7 +87,7 @@ class Souvenir extends React.Component {
               
                 
                 
-                <Button 
+                {/* <Button 
                 border='dotted 2px' 
                 colorScheme='gray' 
                 variant='outline' 
@@ -97,7 +96,7 @@ class Souvenir extends React.Component {
                 onClick = {this.generatePDF}
                 rightIcon = {<ArrowUpIcon/>}>
                     Export
-                </Button>
+                </Button> */}
                 </div>
                 </Flex>
                 
@@ -140,8 +139,6 @@ class Souvenir extends React.Component {
             
             </Box>
             
-
-        
         </div>
         </div>
       );

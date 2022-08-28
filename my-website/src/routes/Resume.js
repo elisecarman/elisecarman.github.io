@@ -270,8 +270,8 @@ class Resume extends React.Component {
 
         <Grid
 
-            minH={"100vh"}
-            templateRows='repeat(12, 1fr)'
+            /* minH={"100vh"} */
+            templateRows='repeat(8, 1fr)'
             templateColumns='repeat(8, 1fr)'
             gap={4}
             >
@@ -282,11 +282,11 @@ class Resume extends React.Component {
        <div className={classes.resume_intro}>Interact with my resume!</div> 
     </div>    
     </GridItem>
-    <GridItem colSpan={4} rowSpan={2}>
+    <GridItem colSpan={4} rowSpan={2} >
         <Image src={art5}></Image>
     </GridItem>
     
-    <GridItem colSpan={1} rowSpan={11} />
+    <GridItem colSpan={1} rowSpan={5} />
     <GridItem colSpan={6} >
     <div className={classes.legend}>
     <Flex> 
@@ -303,21 +303,24 @@ class Resume extends React.Component {
     </GridItem>
     
 
-    <GridItem colSpan={1} rowSpan={11} />
+    <GridItem colSpan={1} rowSpan={5} />
 
-  <GridItem rowSpan={10} colSpan={6} > 
+  <GridItem rowSpan={4} colSpan={6} > 
   <DragDropContext onDragEnd={this.onDragEnd}>
+  
+     
             <Box>
             <Flex>
                 <Box>
                 <Flex>
+                
                 <Box>
                 <CollectionContainer
                 getItemStyle = {this.getItemStyle}
                 getListStyle = {this.getListStyle}
                 itemList = {this.state.skills}
                 droppableId = "skills"
-                col_target = {3}>
+                col_target = {5}>
                 </CollectionContainer> 
 
                 <CollectionContainer
@@ -325,7 +328,7 @@ class Resume extends React.Component {
                 getListStyle = {this.getListStyle}
                 itemList = {this.state.languages}
                 droppableId = "languages"
-                col_target = {3}
+                col_target = {4}
                 />
                 <ListContainer
                 getItemStyle = {this.getItemStyle}
@@ -338,8 +341,9 @@ class Resume extends React.Component {
                 getListStyle = {this.getListStyle}
                 itemList = {this.state.classes}
                 droppableId = "classes"
-                col_target = {2}>
+                col_target = {3}>
                 </CollectionContainer> 
+               
                 </Box>
                 <ListContainer
                 getItemStyle = {this.getItemStyle}
@@ -347,7 +351,9 @@ class Resume extends React.Component {
                 itemList = {this.state.projects}
                 droppableId = "projects"
                 />
+                
             </Flex>
+            
             </Box>
         <Souvenir
         getItemStyle = {this.getItemStyle}
