@@ -1,9 +1,9 @@
 .bg{
     background-color: rgb(33, 33, 33);
-    font: 1.3rem Inconsolata, monospace;
+    /* font: 1.3rem Inconsolata, monospace; */
+    font: 1.3rem Montserrat;
     color: white;
     width: 100%;
-    /* width: 1480px; */
 }
 
 .welcome_area{
@@ -52,7 +52,7 @@ justify-content: center;
 
 .nav{
     color: white;
-}
+} 
 
 .nav_items{
     color: white;
@@ -168,6 +168,7 @@ justify-content: center;
 .scroll_text{
     font-size: 15px;
   line-height: 2.6;
+  width: 90%;
 }
 
 .scroll_display::-webkit-scrollbar {

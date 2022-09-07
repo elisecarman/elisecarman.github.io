@@ -38,6 +38,7 @@ class Resume extends React.Component {
             {type: "skills", id: "9", content:"SpringBoot"},
             {type: "skills", id: "10", content:"NodeJS"},
             {type: "skills", id: "11", content:"MySQL"},
+            {type: "skills", id: "26", content:"MongoDB"},
             {type: "skills", id: "12", content:"Numpy"},
             {type: "skills", id: "13", content:"Git"},
             {type: "skills", id: "14", content:"Docker"},
@@ -56,7 +57,7 @@ class Resume extends React.Component {
         ],
 
         languages : [
-            {type: "languages", id: "26", content:"Python"},
+            {type: "languages", id: "40", content:"Python"},
             {type: "languages", id: "27", content:"Java"},
             {type: "languages", id: "28", content:"JavaScript"},
             {type: "languages", id: "29", content:"HTML"},
@@ -69,11 +70,14 @@ class Resume extends React.Component {
             {type: "languages", id: "37", content:"Swift"},
             {type: "languages", id: "38", content:"Solidity"},
             {type: "languages", id: "39", content:"Pyret"},
-        
+     
+            
         
         ],
+
+
         experiences : [
-            {type: "experiences", id: "40", content: {where: "Anaplan: Software Engineer Intern", when: "(June-August 2022)", what: 
+            {type: "experiences", id: "43", content: {where: "Anaplan: Software Engineer Intern", when: "(June-August 2022)", what: 
             ["Learned industry standards for CI/CD and gained familiarity with Docker, Kubernetes, Jenkins, Tilt, Splunk, Postman",
             "Worked within a full stack team following Agile workflow and Scrum Sprints",
             "Contributed on tickets involving e2e testing with Cucumber and Puppeteer, as well as front end contributions",
@@ -87,7 +91,7 @@ class Resume extends React.Component {
                     "Gained knowledge of Jira and Confluence software"]}}
         ],
         projects : [
-            {type: "projects", id: "43", content: {what: "Search", details: " an algorithm to index and query through a large database of information"}},
+            {type: "projects", id: "52", content: {what: "Search", details: " an algorithm to index and query through a large database of information"}},
             {type: "projects", id: "45", content: {what: "Recommender", details: "a prediction algorithm trained on a collected dataset"}},
             {type: "projects", id: "46", content: {what: "BrunoCoin", details: "a non-optimized basic cryptocurrency- in class project"}},
             {type: "projects", id: "47", content: {what: "Shell", details: "a basic implementation of a shell interface"}},
@@ -200,6 +204,7 @@ class Resume extends React.Component {
                     {type: "skills", id: "9", content:"SpringBoot"},
                     {type: "skills", id: "10", content:"NodeJS"},
                     {type: "skills", id: "11", content:"MySQL"},
+                    {type: "skills", id: "26", content:"MongoDB"},
                     {type: "skills", id: "12", content:"Numpy"},
                     {type: "skills", id: "13", content:"Git"},
                     {type: "skills", id: "14", content:"Docker"},
@@ -218,7 +223,7 @@ class Resume extends React.Component {
                 ],
         
                 languages : [
-                    {type: "languages", id: "26", content:"Python"},
+                    {type: "languages", id: "40", content:"Python"},
                     {type: "languages", id: "27", content:"Java"},
                     {type: "languages", id: "28", content:"JavaScript"},
                     {type: "languages", id: "29", content:"HTML"},
@@ -231,11 +236,14 @@ class Resume extends React.Component {
                     {type: "languages", id: "37", content:"Swift"},
                     {type: "languages", id: "38", content:"Solidity"},
                     {type: "languages", id: "39", content:"Pyret"},
-                
+             
+                    
                 
                 ],
+        
+        
                 experiences : [
-                    {type: "experiences", id: "40", content: {where: "Anaplan: Software Engineer Intern", when: "(June-August 2022)", what: 
+                    {type: "experiences", id: "43", content: {where: "Anaplan: Software Engineer Intern", when: "(June-August 2022)", what: 
                     ["Learned industry standards for CI/CD and gained familiarity with Docker, Kubernetes, Jenkins, Tilt, Splunk, Postman",
                     "Worked within a full stack team following Agile workflow and Scrum Sprints",
                     "Contributed on tickets involving e2e testing with Cucumber and Puppeteer, as well as front end contributions",
@@ -249,7 +257,7 @@ class Resume extends React.Component {
                             "Gained knowledge of Jira and Confluence software"]}}
                 ],
                 projects : [
-                    {type: "projects", id: "43", content: {what: "Search", details: " an algorithm to index and query through a large database of information"}},
+                    {type: "projects", id: "52", content: {what: "Search", details: " an algorithm to index and query through a large database of information"}},
                     {type: "projects", id: "45", content: {what: "Recommender", details: "a prediction algorithm trained on a collected dataset"}},
                     {type: "projects", id: "46", content: {what: "BrunoCoin", details: "a non-optimized basic cryptocurrency- in class project"}},
                     {type: "projects", id: "47", content: {what: "Shell", details: "a basic implementation of a shell interface"}},
@@ -259,6 +267,8 @@ class Resume extends React.Component {
                     {type: "projects", id: "51", content: {what: "Snark", details: "a multiplayer Unity Game – ongoing"}},
                 ],
                 souvenir : [],
+                selected: []
+              
         })
     }
   

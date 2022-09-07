@@ -3,8 +3,8 @@ import { Text, Flex, Spacer, textDecoration } from '@chakra-ui/react';
 import classes from './general.module.css';
 import { Link , Outlet, NavLink} from "react-router-dom";
 import { hover } from '@testing-library/user-event/dist/hover';
-/* import art4 from './assets/artwork4.png';
- */
+
+
 const Nav = () => {
   const [scroll, setScroll] = useState(false);
  
@@ -36,8 +36,10 @@ const Nav = () => {
         return {
           color: isActive ? "white" : "",
           border: isActive ? "dotted 2px" : "none",
+          backgroundColor : isActive ? "rgb(33, 33, 33)" : "rgb(33, 33, 33)",
+          height : isActive ? "40px" : "40px",
           borderRadius: isActive ? "5px" : "",
-          /* padding: "5px", */
+         
           textDecoration: "none",
           
         };
@@ -46,8 +48,9 @@ const Nav = () => {
       to="/"
       >
       <div className={classes.nav_single}>
-        Home
-      </div></NavLink>
+      Home
+      </div>
+      </NavLink>
       
 
       <NavLink 
@@ -55,6 +58,8 @@ const Nav = () => {
         return {
           color: isActive ? "white" : "",
           border: isActive ? "dotted 2px" : "none",
+          backgroundColor : isActive ? "rgb(33, 33, 33)" : "rgb(33, 33, 33)",
+          height : isActive ? "40px" : "40px",
           borderRadius: isActive ? "5px" : "",
           textDecoration: "none",
           

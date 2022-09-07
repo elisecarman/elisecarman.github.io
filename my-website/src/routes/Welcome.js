@@ -100,27 +100,7 @@ class Welcome extends React.Component {
            
             <GridItem colSpan={9} rowSpan={3}  />
             </Grid>
-           {/*  <Box>
-           
-            <Flex>
-            
-            <div className={classes.intro}>
-            <Box>
-              <div style={{fontSize: 40}}>Welcome</div>
-            My name is Elise Carman
-            <br></br>
-            I am a software developer at Brown University 
-            
-
-            </Box>
-            
-            </div>
-            </Flex>
-            
-            
-            </Box>
-
-             */}
+   
         </div>
         </div>
       );
