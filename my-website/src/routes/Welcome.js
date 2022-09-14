@@ -20,7 +20,6 @@ class Welcome extends React.Component {
         
         <div className={classes.bg}>
         <div className={classes.mainPage}>
-        {/* */}
           
             <div className={classes.img1}>
             {<Image src={art4}></Image> }
@@ -28,10 +27,7 @@ class Welcome extends React.Component {
        
 
             <Grid
-              /* h='200px' */
               w={"100%"}
-              
-              /* minH={"100vh"} */
               templateRows='repeat(19, 1fr)'
               templateColumns='repeat(9, 1fr)'
               gap={4}
@@ -55,8 +51,6 @@ class Welcome extends React.Component {
               <div className={classes.scroll_display}>
               <div className={classes.shadow_display}></div>
               
-               {/* 
-              <Text lineHeight={10} fontSize={21}> */}
               <div className={classes.scroll_text}>
                 <br></br>
                 <br></br>

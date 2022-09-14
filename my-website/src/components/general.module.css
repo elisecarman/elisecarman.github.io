@@ -1,7 +1,6 @@
 .bg{
     background-color: rgb(33, 33, 33);
-    /* font: 1.3rem Inconsolata, monospace; */
-    font: 1.3rem Montserrat;
+    font: 1.3rem Inconsolata, monospace;
     color: white;
     width: 100%;
 }
@@ -12,18 +11,13 @@
 
 .mainPage {
     background-color: rgb(33, 33, 33);
-    /* min-height: 100vh;
-    width: "full"; */
     height: 100%;
     width: 100%;
     display: flex;
-   /*  flex-direction: row;  */
-    /* scroll-behavior: smooth; */
     overflow-y: 'auto';
     scroll-behavior: 'smooth';
     font: 1.3rem Inconsolata, monospace;
     color: white;
-    /* overflow: hidden; */
   }
 
 .mainPage::-webkit-scrollbar {
@@ -34,8 +28,6 @@ display: none;
     
 background-color: rgb(33, 33, 33);
 display: flex;
-/* width: "full"; */
-/* width: 1480px; */
 width: 100%;
 height: 100%;
 overflow-y: 'auto';
@@ -43,7 +35,6 @@ scroll-behavior: 'smooth';
 
 align-items: center;
 justify-content: center;
-/* overflow: hidden; */
 }
 
 .mainPage2::-webkit-scrollbar {
@@ -73,7 +64,6 @@ justify-content: center;
 }
 
 .nav_single:hover{
-    /* background-color: rgb(51, 51, 51); */
     color: white;
     text-decoration: none;
     box-shadow:  0 0 15px rgb(0, 0, 0);
@@ -156,8 +146,7 @@ justify-content: center;
 .scroll_display{
     scroll-behavior: smooth;
     overflow-x: hidden;
-    overflow-y: 'auto';/* 
-    scroll-behavior: auto; */
+    overflow-y: 'auto';
     margin-top: 18%;
     height: 400px;
     width: 100%;

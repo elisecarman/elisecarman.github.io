@@ -1,12 +1,9 @@
 .mainPage {
     background-color: rgb(33, 33, 33);
-    /* min-height: 100vh; */
     width: "full";
-    display: flex;/* 
-    flex-direction: column; */
+    display: flex;
     align-items: center;
     justify-content: center;
-    /* font-size: calc(10px + 2vmin); */
     scroll-behavior: smooth; 
   }
 
@@ -30,7 +27,6 @@
 .skills {
 background-color:  rgb(59, 59, 59);
 min-height: 30px; 
-/* font-size: 15px; */
 width: 100px;
 text-align: center;
 border-radius: 10px;
@@ -50,11 +46,8 @@ margin: 5px;
 
 .languages {
 background-color: rgb(59, 59, 59);
-
-/* font-size: 15px; */
 min-height: 30px; 
 width: 100px;
-/* max-block-size: 90px; */
 text-align: center;
 border-radius: 10px;
 border-color: white;
@@ -124,7 +117,6 @@ margin: 5px;
 
 .exp_what{
     padding-top: 10px;
-   /*  font-size: 14px;  */
 }
 
 .exp_where{
@@ -141,11 +133,9 @@ margin: 5px;
 
 .projects {
     background-color: rgb(59, 59, 59);
-    /* min-height: 30px;  */
     color: peru;
     padding: 10px 10px 10px 10px;
     width: 200px;
-    /* max-width: 200px; */
     }
 
 
@@ -169,17 +159,13 @@ margin: 5px;
 
 .souvenir {
     background-color: rgb(33, 33, 33);
-   /*  min-height: 100vh; */
     height: 80%;
     display: flex;
     padding: 10px 10px 10px 10px;
     font: 1.3rem Inconsolata, monospace;
     width: 100%;
-    /* width: 300px; */
     }
 
-/* 
-color: turquoise; */
     
 .so_name{
     font-size: 24px;
@@ -223,8 +209,7 @@ color: turquoise; */
 }
 
 .so_drop:hover{
-    border: 2px dotted rgb(255, 255, 255);;
-    /* border-color: rgb(255, 255, 255); */
+    border: 2px dotted rgb(255, 255, 255);
     color: rgb(255, 255, 255);
 }
 

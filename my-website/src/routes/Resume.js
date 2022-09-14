@@ -56,6 +56,8 @@ class Resume extends React.Component {
             
         ],
 
+
+
         languages : [
             {type: "languages", id: "40", content:"Python"},
             {type: "languages", id: "27", content:"Java"},
@@ -70,12 +72,13 @@ class Resume extends React.Component {
             {type: "languages", id: "37", content:"Swift"},
             {type: "languages", id: "38", content:"Solidity"},
             {type: "languages", id: "39", content:"Pyret"},
+            {type: "languages", id: "41", content:"SQL"},
      
             
         
         ],
-
-
+ 
+        
         experiences : [
             {type: "experiences", id: "43", content: {where: "Anaplan: Software Engineer Intern", when: "(June-August 2022)", what: 
             ["Learned industry standards for CI/CD and gained familiarity with Docker, Kubernetes, Jenkins, Tilt, Splunk, Postman",
@@ -83,7 +86,7 @@ class Resume extends React.Component {
             "Contributed on tickets involving e2e testing with Cucumber and Puppeteer, as well as front end contributions",
             "Facilitated the adoption of New Relic within my team for synthetic monitoring"]}},
 
-            {type: "experiences", id: "41", content: {where: "Anthem AI: Software Engineer Intern", when: "(February-April 2022)", what: ["Created a prototype for the UI of a medical information display tool using React, gaining familiarity with Electron Forge, CSS, JavaScript, HTML and TypeScript"]}},
+            {type: "experiences", id: "52", content: {where: "Anthem AI: Software Engineer Intern", when: "(February-April 2022)", what: ["Created a prototype for the UI of a medical information display tool using React, gaining familiarity with Electron Forge, CSS, JavaScript, HTML and TypeScript"]}},
         
             {type: "experiences", id: "42", content: {where: "Anthem AI: Software Engineer Intern", when: "(June-August 2021)", 
             what: ["Created a V0 prototype for the UI of a medical information display tool using XCode and Swift",
@@ -204,7 +207,6 @@ class Resume extends React.Component {
                     {type: "skills", id: "9", content:"SpringBoot"},
                     {type: "skills", id: "10", content:"NodeJS"},
                     {type: "skills", id: "11", content:"MySQL"},
-                    {type: "skills", id: "26", content:"MongoDB"},
                     {type: "skills", id: "12", content:"Numpy"},
                     {type: "skills", id: "13", content:"Git"},
                     {type: "skills", id: "14", content:"Docker"},
@@ -218,13 +220,13 @@ class Resume extends React.Component {
                     {type: "skills", id: "22", content:"Wiremock"},
                     {type: "skills", id: "23", content:"Agile Workflow"},
                     {type: "skills", id: "24", content:"Jira"},
-                    {type: "skills", id: "25", content:"Confluence"} 
+                    {type: "skills", id: "25", content:"Confluence"},
+                    {type: "skills", id: "26", content:"MongoDB"},
+                    {type: "skills", id: "27", content:"TensorFlow"}
                     
                 ],
         
                 languages : [
-                    {type: "languages", id: "40", content:"Python"},
-                    {type: "languages", id: "27", content:"Java"},
                     {type: "languages", id: "28", content:"JavaScript"},
                     {type: "languages", id: "29", content:"HTML"},
                     {type: "languages", id: "30", content:"CSS"},
@@ -236,6 +238,8 @@ class Resume extends React.Component {
                     {type: "languages", id: "37", content:"Swift"},
                     {type: "languages", id: "38", content:"Solidity"},
                     {type: "languages", id: "39", content:"Pyret"},
+                    {type: "languages", id: "40", content:"Python"},
+                    {type: "languages", id: "41", content:"Java"},
              
                     
                 
@@ -249,15 +253,15 @@ class Resume extends React.Component {
                     "Contributed on tickets involving e2e testing with Cucumber and Puppeteer, as well as front end contributions",
                     "Facilitated the adoption of New Relic within my team for synthetic monitoring"]}},
         
-                    {type: "experiences", id: "41", content: {where: "Anthem AI: Software Engineer Intern", when: "(February-April 2022)", what: ["Created a prototype for the UI of a medical information display tool using React, gaining familiarity with Electron Forge, CSS, JavaScript, HTML and TypeScript"]}},
+                    {type: "experiences", id: "44", content: {where: "Anthem AI: Software Engineer Intern", when: "(February-April 2022)", what: ["Created a prototype for the UI of a medical information display tool using React, gaining familiarity with Electron Forge, CSS, JavaScript, HTML and TypeScript"]}},
                 
                     {type: "experiences", id: "42", content: {where: "Anthem AI: Software Engineer Intern", when: "(June-August 2021)", 
                     what: ["Created a V0 prototype for the UI of a medical information display tool using XCode and Swift",
                             "Tested UX hypothesis and reported to a design leader, gaining familiarity with Avocode and Zeplin",
                             "Gained knowledge of Jira and Confluence software"]}}
                 ],
+                
                 projects : [
-                    {type: "projects", id: "52", content: {what: "Search", details: " an algorithm to index and query through a large database of information"}},
                     {type: "projects", id: "45", content: {what: "Recommender", details: "a prediction algorithm trained on a collected dataset"}},
                     {type: "projects", id: "46", content: {what: "BrunoCoin", details: "a non-optimized basic cryptocurrency- in class project"}},
                     {type: "projects", id: "47", content: {what: "Shell", details: "a basic implementation of a shell interface"}},
@@ -265,6 +269,7 @@ class Resume extends React.Component {
                     {type: "projects", id: "49", content: {what: "CIFAR2 classifier", details: "a convolutional neural network"}},
                     {type: "projects", id: "50", content: {what: "Variable Autoencoder on MNIST", details: "A Generative Adversarial Network generating new written numbers"}},
                     {type: "projects", id: "51", content: {what: "Snark", details: "a multiplayer Unity Game – ongoing"}},
+                    {type: "projects", id: "52", content: {what: "Search", details: " an algorithm to index and query through a large database of information"}}
                 ],
                 souvenir : [],
                 selected: []
