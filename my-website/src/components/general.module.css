@@ -1,11 +1,11 @@
-.bg{
+.bg {
     background-color: rgb(33, 33, 33);
     font: 1.3rem Inconsolata, monospace;
     color: white;
     width: 100%;
 }
 
-.welcome_area{
+.welcome_area {
     display: flex;
 }
 
@@ -18,34 +18,34 @@
     scroll-behavior: 'smooth';
     font: 1.3rem Inconsolata, monospace;
     color: white;
-  }
-
-.mainPage::-webkit-scrollbar {
-display: none;
 }
 
-.mainPage2{
-    
-background-color: rgb(33, 33, 33);
-display: flex;
-width: 100%;
-height: 100%;
-overflow-y: 'auto';
-scroll-behavior: 'smooth';
+.mainPage::-webkit-scrollbar {
+    display: none;
+}
 
-align-items: center;
-justify-content: center;
+.mainPage2 {
+
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-y: 'auto';
+    scroll-behavior: 'smooth';
+
+    align-items: center;
+    justify-content: center;
 }
 
 .mainPage2::-webkit-scrollbar {
     display: none;
-    }
+}
 
-.nav{
+.nav {
     color: white;
-} 
+}
 
-.nav_items{
+.nav_items {
     color: white;
     margin-right: 20px;
     margin-left: 20px;
@@ -53,7 +53,7 @@ justify-content: center;
     font: 1.7rem Inconsolata, monospace;
 }
 
-.nav_single{
+.nav_single {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -63,22 +63,23 @@ justify-content: center;
 
 }
 
-.nav_single:hover{
+.nav_single:hover {
     color: white;
     text-decoration: none;
-    box-shadow:  0 0 15px rgb(0, 0, 0);
+    box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
 
-.intro{
+.intro {
     color: white;
     font: 1.9rem Inconsolata, monospace;
     margin-top: 40%;
-    }
+    margin-left: -100px;
+}
 
 .slide-bottom {
     -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* ----------------------------------------------
@@ -94,72 +95,95 @@ justify-content: center;
 * ----------------------------------------
 */
 @-webkit-keyframes slide-bottom {
-0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-}
-100% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-}
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
 
 }
+
 @keyframes slide-bottom {
-0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
 }
-100% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-}
-}
-    
+
 
 .frame {
-   
-    width: 50%; 
+
+    width: 50%;
     height: 50%;
 }
 
 /* Welcome page */
 
-.img1{
+.img1 {
     position: absolute;
     z-index: 0;
     pointer-events: none;
 }
 
-.spacer{
-    height:150px;
+.spacer {
+    height: 150px;
 }
 
-.shadow_display{
+.shadow_display {
     height: 400px;
-    width: 31%;
-    margin-left: -30px;
+    width: 49%;
+    align-self: right;
+    /* margin-left: -30px; */
     box-shadow: inset 0 0 100px rgb(33, 33, 33);
     position: absolute;
     pointer-events: none;
 }
 
-.scroll_display{
+.shadow_display_small {
+    height: 400px;
+    width: 90%;
+    /* margin-left: -30px; */
+    box-shadow: inset 0 0 100px rgb(33, 33, 33);
+    position: absolute;
+    pointer-events: none;
+}
+
+.scroll_display {
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: 'auto';
     margin-top: 18%;
     height: 400px;
     width: 100%;
-    padding-left: 70%;
+    /* padding-left: 70%; */
+}
+
+.scroll_display_small {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: 'auto';
+    margin-top: -30px;
+    height: 400px;
+    width: 100%;
+    margin-left: 20px;
 
 }
 
-.scroll_text{
+.scroll_text {
     font-size: 15px;
-  line-height: 2.6;
-  width: 90%;
+    line-height: 2.6;
+    width: 90%;
 }
 
 .scroll_display::-webkit-scrollbar {
     display: none;
-  }
+}

@@ -7,19 +7,27 @@ import Skills from "../components/cv_components/Skills"
 import Experiences from "../components/cv_components/Experiences"
 import Projects from "../components/cv_components/Projects"
 import Souvenir from "../components/cv_components/Souvenir"
+import Souvenir2 from "../components/cv_components/Souvenir-f"
 import ListContainer from "../components/cv_components/ListContainer"
 import CollectionContainer from "../components/cv_components/CollectionContainer"
 
 import { Row, Col, Container } from "react-bootstrap";
 import { Text, Box, Flex, Spacer, Image, Grid, GridItem } from '@chakra-ui/react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-import art5 from '../assets/artwork5.png';
+import art5 from '../assets/artwork5.png'
 import 'animate.css';
-
+import SouvernirSmall from "../components/cv_components/SouvenirSmall";
+import CV from "../components/cv_components/CV";
+import Legend from "../components/cv_components/Legend";
+import Intro from "../components/cv_components/Intro";
 
 const grid = 8;
 
 class Resume extends React.Component {
+
+
+
+
     constructor(props) {
         super(props)
         this.state = {
@@ -53,7 +61,6 @@ class Resume extends React.Component {
                 { type: "skills", id: "23", content: "Arduino" }
 
             ],
-
 
             /*    { type: "skills", id: "17", content: "Tilt" },
            { type: "skills", id: "22", content: "Wiremock" },
@@ -142,7 +149,6 @@ class Resume extends React.Component {
     };
 
     onDragEnd = result => {
-        console.log("got here")
         const { source, destination } = result;
 
         // dropped outside the list
@@ -295,6 +301,7 @@ class Resume extends React.Component {
 
     render() {
 
+
         return (
             <div className={general.bg}>
                 <div className={general.mainPage2}>
@@ -302,99 +309,45 @@ class Resume extends React.Component {
                     <Grid
 
                         /* minH={"100vh"} */
-                        templateRows='repeat(8, 1fr)'
+                        templateRows='repeat(5, 1fr)'
                         templateColumns='repeat(8, 1fr)'
                         gap={4}
                     >
 
-                        <GridItem colSpan={1} rowSpan={2} />
-                        <GridItem colSpan={3} rowSpan={2} >
-                            <div class="animate__animated animate__fadeIn">
-                                <div className={classes.resume_intro}>Interact with my resume!</div>
-                            </div>
-                        </GridItem>
-                        <GridItem colSpan={4} rowSpan={2} >
-                            <Image src={art5}></Image>
+                        <GridItem colSpan={1} rowSpan={1} />
+                        <GridItem colSpan={7} rowSpan={1}>
+                            <Intro />
                         </GridItem>
 
-                        <GridItem colSpan={1} rowSpan={5} />
-                        <GridItem colSpan={6} >
-                            <div className={classes.legend}>
-                                <Flex>
+                        <GridItem colSpan={1} rowSpan={4} />
 
-                                    <div className={classes.list2} style={{ color: "white" }}>Legend</div>
-                                    <div style={{ height: 40, marginBottom: 20 }} className={classes.legend_languages} > Coding Languages</div>
-                                    <div style={{ height: 40, marginBottom: 20 }} className={classes.legend_skills}>Software Experience</div>
-                                    <div style={{ height: 40, marginBottom: 20 }} className={classes.legend_projects}>Coding Projects</div>
-                                    <div style={{ height: 40, marginBottom: 20 }} className={classes.legend_experiences}>Professional Experience</div>
-                                    <div style={{ height: 40, marginBottom: 20 }} className={classes.legend_classes}>University Classes</div>
-
-                                </Flex>
-                            </div>
+                        <GridItem colSpan={6} rowSpan={1}>
+                            <Legend />
                         </GridItem>
 
 
-                        <GridItem colSpan={1} rowSpan={5} />
+                        <GridItem colSpan={1} rowSpan={4}>
 
-                        <GridItem rowSpan={4} colSpan={6} >
-                            <DragDropContext onDragEnd={this.onDragEnd}>
+                        </GridItem>
+
+                        <GridItem colSpan={6} rowSpan={3}>
+
+                            <CV
+                                getItemStyle={this.getItemStyle}
+                                getListStyle={this.getListStyle}
+                                skills={this.state.skills}
+                                languages={this.state.languages}
+                                experiences={this.state.experiences}
+                                classes={this.state.classes}
+                                projects={this.state.projects}
+                                souvenirs={this.state.souvenir}
+                                handleReset={this.handleReset}
+                                onDragEnd={this.onDragEnd}
+                            >
+
+                            </CV>
 
 
-                                <Box>
-                                    <Flex>
-                                        <Box>
-                                            <Flex>
-
-                                                <Box>
-                                                    <CollectionContainer
-                                                        getItemStyle={this.getItemStyle}
-                                                        getListStyle={this.getListStyle}
-                                                        itemList={this.state.skills}
-                                                        droppableId="skills"
-                                                        col_target={5}>
-                                                    </CollectionContainer>
-
-                                                    <CollectionContainer
-                                                        getItemStyle={this.getItemStyle}
-                                                        getListStyle={this.getListStyle}
-                                                        itemList={this.state.languages}
-                                                        droppableId="languages"
-                                                        col_target={4}
-                                                    />
-                                                    <ListContainer
-                                                        getItemStyle={this.getItemStyle}
-                                                        getListStyle={this.getListStyle}
-                                                        itemList={this.state.experiences}
-                                                        droppableId="experiences"
-                                                    />
-                                                    <CollectionContainer
-                                                        getItemStyle={this.getItemStyle}
-                                                        getListStyle={this.getListStyle}
-                                                        itemList={this.state.classes}
-                                                        droppableId="classes"
-                                                        col_target={3}>
-                                                    </CollectionContainer>
-
-                                                </Box>
-                                                <ListContainer
-                                                    getItemStyle={this.getItemStyle}
-                                                    getListStyle={this.getListStyle}
-                                                    itemList={this.state.projects}
-                                                    droppableId="projects"
-                                                />
-
-                                            </Flex>
-
-                                        </Box>
-                                        <Souvenir
-                                            getItemStyle={this.getItemStyle}
-                                            getListStyle={this.getListStyle}
-                                            itemList={this.state.souvenir}
-                                            droppableId="souvenir"
-                                            handleReset={this.handleReset}></Souvenir>
-                                    </Flex>
-                                </Box>
-                            </DragDropContext>
                         </GridItem>
                     </Grid>
 

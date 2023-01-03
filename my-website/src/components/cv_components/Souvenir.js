@@ -64,7 +64,7 @@ class Souvenir extends React.Component {
                                 <div className={classes.so_grade}>expected graduation: December 2023 </div>
                             </Box>
                             <Spacer></Spacer>
-                            <div className={classes.so_gpa}> GPA: 3.81</div>
+                            <div className={classes.so_gpa}> GPA: 3.84</div>
                         </Flex>
 
                         <textarea className={classes.so_comment} placeholder={"Type in your thoughts"}>

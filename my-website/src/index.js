@@ -11,26 +11,27 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Resume from './routes/Resume';
 import Welcome from './routes/Welcome';
+import Welcome2 from './routes/Welcome-f';
 import 'animate.css';
 import art4 from './assets/artwork4.png';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render( 
-<ChakraProvider>
-  <BrowserRouter>
-  <Routes>
-  <Route path="/" element={<App />}> 
-    <Route path="/" element={<Welcome />} />
-    <Route path="resume" element={<Resume />} />
-    <Route
-      path="*"
-      element=
-        {<Welcome />}
-    />
-    </Route>
-    
-  </Routes>
-  </BrowserRouter>
+root.render(
+  <ChakraProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path="/" element={<Welcome2 />} />
+          <Route path="resume" element={<Resume />} />
+          <Route
+            path="*"
+            element=
+            {<Welcome />}
+          />
+        </Route>
+
+      </Routes>
+    </BrowserRouter>
   </ChakraProvider>
 );
 
