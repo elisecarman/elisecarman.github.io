@@ -39,7 +39,6 @@ export default function CV(props) {
     const { height, width } = useWindowDimensions();
     console.log(width);
     const num_columns = growColumns(width);
-    console.log(num_columns);
 
     return (width > 975 ?
         <DragDropContext onDragEnd={props.onDragEnd}>

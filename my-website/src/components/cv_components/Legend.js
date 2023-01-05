@@ -38,7 +38,6 @@ function growLegend(width) {
                 </div>)
             break;
         case 2:
-            console.log("hi!");
             result =
                 (<div className={classes.legend}>
                     <Box>
@@ -57,7 +56,6 @@ function growLegend(width) {
                 </div>)
             break;
         case 3:
-            console.log("hi!");
             result =
                 (<div className={classes.legend}>
                     <Box>
@@ -77,7 +75,6 @@ function growLegend(width) {
                 </div>)
             break;
         case 4:
-            console.log("hi!");
             result =
                 (<div className={classes.legend}>
                     <Box>
@@ -128,7 +125,6 @@ function growLegend(width) {
             break;
 
         default:
-            console.log("boo");
     }
     return result;
 }
