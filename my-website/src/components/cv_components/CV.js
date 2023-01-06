@@ -18,7 +18,6 @@ function growColumns(width) {
             return 1;
         case 2:
             return 1;
-
         case 3:
             return 3;
 
