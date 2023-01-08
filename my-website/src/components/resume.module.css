@@ -26,8 +26,9 @@
 
 .skills {
     background-color: rgb(59, 59, 59);
+    padding: 5px;
     min-height: 30px;
-    width: 100px;
+    width: 110px;
     text-align: center;
     border-radius: 10px;
     border-color: rgb(255, 203, 71);
@@ -37,17 +38,30 @@
     margin: 5px;
 }
 
+.skills_abbr {
+    background-color: rgb(59, 59, 59);
+    padding: 5px;
+    min-height: 30px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    border-color: rgb(255, 203, 71);
+    border-width: 2px;
+    color: rgb(255, 203, 71);
+    transition: 0.3s;
+
+}
 
 .skills:hover {
     background-color: rgb(118, 92, 36);
-    border: dotted;
+    /* border: dotted; */
 }
 
 
 .languages {
     background-color: rgb(59, 59, 59);
     min-height: 30px;
-    width: 100px;
+    width: 110px;
 
     text-align: center;
     border-radius: 10px;
@@ -59,9 +73,27 @@
     margin: 5px;
 }
 
+.languages_abbr {
+    background-color: rgb(59, 59, 59);
+    min-height: 30px;
+    width: 100%;
+
+    text-align: center;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2px;
+    color: whitesmoke;
+    padding: 5px;
+    transition: 0.3s;
+
+}
+
 .languages:hover {
-    background-color: rgb(137, 137, 137);
-    border: dotted;
+    /* background-color: rgb(137, 137, 137); */
+    background-color: rgb(3,
+            75,
+            82);
+    /* border: dotted; */
 }
 
 
@@ -87,6 +119,16 @@
     transition: 0.3s;
 }
 
+.classes_abbr {
+    background-color: rgb(59, 59, 59);
+    height: 150px;
+    width: 100%;
+    color: thistle;
+    border-radius: 5px;
+    padding: 2px 2px 2px 2px;
+    transition: 0.3s;
+}
+
 .classes:hover {
     background-color: rgb(87, 61, 87)
 }
@@ -103,9 +145,10 @@
     color: tomato;
     padding: 10px 10px 10px 10px;
     transition: 0.3s;
-    margin: 5px;
     width: 100%;
 }
+
+
 
 .experiences:hover {
     background-color: rgb(72, 34, 27)
@@ -143,20 +186,17 @@
 .projects {
     background-color: rgb(59, 59, 59);
     color: peru;
-    padding: 10px 10px 10px 10px;
+    transition: 0.3s;
+    padding: 5px 5px 5px 5px;
     width: 200px;
-    border-radius: 5px;
 }
 
-.projects_small {
+.projects_abbr {
     background-color: rgb(59, 59, 59);
     color: peru;
-    padding: 10px 10px 10px 10px;
-    width: 200px;
-    height: 180px;
-    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
 }
-
 
 .projects:hover {
     background-color: rgb(92, 56, 22)
@@ -170,6 +210,7 @@
 }
 
 .pro_details {
+    padding: 5px;
     font-size: 14px;
 }
 
@@ -177,7 +218,6 @@
 
 
 .souvenir {
-    /* background-color: rgb(33, 33, 33); */
     height: 80%;
     display: flex;
     padding: 10px 10px 10px 10px;
@@ -215,6 +255,7 @@
 .so_drop {
     height: 100%;
     width: 100%;
+    max-width: 270px;
     border: 2px dotted lightcoral;
     border-radius: 5px;
     font-size: 35px;
@@ -223,8 +264,11 @@
     transition: 0.3s;
     color: lightcoral;
     display: flex;
-    justify-content: center;
+    text-align: center;
+    position: relative;
 }
+
+
 
 .so_drop:hover {
     border: 2px dotted lightcoral;
@@ -270,7 +314,6 @@
 
 .legend_skills {
     background-color: rgb(59, 59, 59);
-
     font-size: 15px;
     text-align: center;
     border-radius: 10px;
@@ -319,4 +362,16 @@
     padding-top: 60%;
     padding-left: 35%;
 
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }

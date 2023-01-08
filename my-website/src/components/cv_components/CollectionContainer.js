@@ -23,7 +23,7 @@ class CollectionContainer extends React.Component {
             return <Classes
                 name={content.name}
                 grade={content.grade}>
-
+                abbreviated={false}
             </Classes>
         } else if (type == "skills") {
             return <Skills name={content}></Skills>

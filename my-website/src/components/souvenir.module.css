@@ -1,3 +1,10 @@
+.bg {
+    background-color: rgb(33, 33, 33);
+    font: 1.3rem Inconsolata, monospace;
+    color: white;
+    width: 100%;
+}
+
 .parent {
     border: 1px solid black;
     margin: 1rem;
@@ -15,6 +22,12 @@
 }
 
 .report {
-    padding: 2rem 2rem;
+    display: hidden;
+    padding: 1rem 1rem;
+
+}
+
+.margin {
+    margin: 30px;
 
 }

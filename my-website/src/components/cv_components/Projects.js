@@ -10,18 +10,33 @@ class Projects extends React.Component {
 
   render() {
     return (
-      <div className={classes.projects}>
-        <Box>
-          <div className={classes.pro_what}>
-            {this.props.what}
-          </div>
-          <div className={classes.lil_dash_projects}>
-            <div className={classes.pro_details}>
-              {this.props.details}
+      this.props.abbreviated ?
+        <div className={classes.projects_abbr}>
+          <Box>
+            <div className={classes.pro_what}>
+              {this.props.what}
             </div>
-          </div>
-        </Box>
-      </div>
+            <div className={classes.lil_dash_projects}>
+              <div className={classes.pro_details}>
+                {this.props.details}
+              </div>
+            </div>
+          </Box>
+        </div>
+        :
+        <div className={classes.projects}>
+          <Box>
+            <div className={classes.pro_what}>
+              {this.props.what}
+            </div>
+            <div className={classes.lil_dash_projects}>
+              <div className={classes.pro_details}>
+                {this.props.details}
+              </div>
+            </div>
+          </Box>
+        </div>
+
     );
   }
 }

@@ -26,10 +26,13 @@ function growLegend(width) {
                         <Flex>
                             <div className={classes.list2} style={{ color: "white" }}>Legend</div>
                             <div style={{ marginBottom: 20 }} className={classes.legend_languages} > Coding Languages</div>
-                            <div style={{ marginBottom: 20 }} className={classes.legend_skills}>Software Experience</div>
                         </Flex>
                         <Flex>
+                            <div style={{ marginBottom: 20 }} className={classes.legend_skills}>Software Experience</div>
                             <div style={{ marginBottom: 20 }} className={classes.legend_experiences}>Professional Experience</div>
+
+                        </Flex>
+                        <Flex>
                             <div style={{ marginBottom: 20 }} className={classes.legend_projects}>Coding Projects</div>
                             <div style={{ marginBottom: 20 }} className={classes.legend_classes}>University Classes</div>
 
@@ -44,10 +47,13 @@ function growLegend(width) {
                         <Flex>
                             <div className={classes.list2} style={{ color: "white" }}>Legend</div>
                             <div style={{ marginBottom: 20 }} className={classes.legend_languages} > Coding Languages</div>
-                            <div style={{ marginBottom: 20 }} className={classes.legend_skills}>Software Experience</div>
                         </Flex>
                         <Flex>
+                            <div style={{ marginBottom: 20 }} className={classes.legend_skills}>Software Experience</div>
                             <div style={{ marginBottom: 20 }} className={classes.legend_experiences}>Professional Experience</div>
+
+                        </Flex>
+                        <Flex>
                             <div style={{ marginBottom: 20 }} className={classes.legend_projects}>Coding Projects</div>
                             <div style={{ marginBottom: 20 }} className={classes.legend_classes}>University Classes</div>
 
@@ -62,15 +68,17 @@ function growLegend(width) {
                         <Flex>
                             <div className={classes.list2} style={{ color: "white" }}>Legend</div>
                             <div style={{ marginBottom: 20 }} className={classes.legend_languages} > Coding Languages</div>
-                            <div style={{ marginBottom: 20 }} className={classes.legend_skills}>Software Experience</div>
                         </Flex>
                         <Flex>
+                            <div style={{ marginBottom: 20 }} className={classes.legend_skills}>Software Experience</div>
                             <div style={{ marginBottom: 20 }} className={classes.legend_experiences}>Professional Experience</div>
+
+                        </Flex>
+                        <Flex>
                             <div style={{ marginBottom: 20 }} className={classes.legend_projects}>Coding Projects</div>
                             <div style={{ marginBottom: 20 }} className={classes.legend_classes}>University Classes</div>
 
                         </Flex>
-
                     </Box >
                 </div>)
             break;

@@ -13,7 +13,7 @@
     background-color: rgb(33, 33, 33);
     height: 100%;
     width: 100%;
-    display: flex;
+    /* display: flex; */
     overflow-y: 'auto';
     scroll-behavior: 'smooth';
     font: 1.3rem Inconsolata, monospace;
@@ -27,7 +27,7 @@
 .mainPage2 {
 
     background-color: rgb(33, 33, 33);
-    display: flex;
+    /* display: flex; */
     width: 100%;
     height: 100%;
     overflow-y: 'auto';

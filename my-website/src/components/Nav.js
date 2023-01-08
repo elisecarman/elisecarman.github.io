@@ -216,7 +216,7 @@ export default function Nav() {
             w="full"
             bgColor="#212121"
           >
-            <Text fontSize="25px" fontWeight="bold" marginTop="35px">
+            <Text fontSize="25px" fontWeight="bold" marginTop="35px" textShadow='2px 2px #212121'>
 
               Elise Carman website
             </Text>

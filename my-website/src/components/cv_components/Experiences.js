@@ -19,8 +19,6 @@ function Experiences(props) {
       <div className={classes.exp_when}>
         {props.when}
       </div>
-
-
     </div>
 
 

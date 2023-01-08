@@ -3,30 +3,49 @@ import classes from "../resume.module.css"
 import { Text, Box, Flex, Spacer } from '@chakra-ui/react';
 
 class Classes extends React.Component {
-    constructor(props) {
-      super(props)
-        };
-      
-  
-    render() {
-      return (
-        <div className={classes.classes}>
-            <Box>
+  constructor(props) {
+    super(props)
+  };
+
+
+  render() {
+    return (
+
+      this.props.abbreviated ?
+
+        <div className={classes.classes_abbr}>
+
+          <Box>
             <Flex>
-                <Spacer/>
-                <div className={classes.grade}>
+              <Spacer />
+              <div className={classes.grade}>
                 {this.props.grade}
-                </div>
+              </div>
             </Flex>
             <hr></hr>
             <div className={classes.class}>
-            {this.props.name}
+              {this.props.name}
             </div>
-            </Box>
+          </Box>
         </div>
-      );
-    }
+        :
+        <div className={classes.classes}>
+          <Box>
+            <Flex>
+              <Spacer />
+              <div className={classes.grade}>
+                {this.props.grade}
+              </div>
+            </Flex>
+            <hr></hr>
+            <div className={classes.class}>
+              {this.props.name}
+            </div>
+          </Box>
+        </div>
+    );
+  }
 }
-  
+
 
 export default Classes;
