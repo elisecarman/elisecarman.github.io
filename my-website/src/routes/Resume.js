@@ -25,35 +25,30 @@ const grid = 8;
 
 class Resume extends React.Component {
 
-
-
-
     constructor(props) {
         super(props)
         this.state = {
             classes: [
-                { type: "classes", id: "0", content: { name: "Deep Learning", grade: "A" } },
-                { type: "classes", id: "1", content: { name: "Cybersecurity and International Relations", grade: "A" } },
-                { type: "classes", id: "2", content: { name: "Computer Systems", grade: "A" } },
-                { type: "classes", id: "3", content: { name: "Blockchain Cryptocurrency", grade: "B" } },
-                { type: "classes", id: "4", content: { name: "Compilers and Program Analysis", grade: "A" } },
-                { type: "classes", id: "5", content: { name: "Embedded Software", grade: "A" } },
-                { type: "classes", id: "6", content: { name: "Software Security and Exploitation", grade: "A" } }
+                { type: "classes", id: "0", content: { name: "Operating Systems", grade: "A" } },
+                { type: "classes", id: "1", content: { name: "Deep Learning", grade: "A" } },
+                { type: "classes", id: "2", content: { name: "Cybersecurity and International Relations", grade: "A" } },
+                { type: "classes", id: "3", content: { name: "Computer Systems", grade: "A" } },
+                { type: "classes", id: "4", content: { name: "Blockchain Cryptocurrency", grade: "B" } },
+                { type: "classes", id: "5", content: { name: "Compilers and Program Analysis", grade: "A" } },
+                { type: "classes", id: "6", content: { name: "Embedded Software", grade: "A" } },
+                { type: "classes", id: "7", content: { name: "Software Security and Exploitation", grade: "A" } }
             ],
 
             skills: [
                 { type: "skills", id: "80", content: "React" },
                 { type: "skills", id: "90", content: "SpringBoot" },
                 { type: "skills", id: "100", content: "NodeJS" },
-                { type: "skills", id: "110", content: "MongoDB" },
-                { type: "skills", id: "120", content: "MySQL" },
                 { type: "skills", id: "130", content: "NumPy" },
                 { type: "skills", id: "140", content: "TensorFlow" },
                 { type: "skills", id: "150", content: "Git" },
                 { type: "skills", id: "160", content: "Docker" },
                 { type: "skills", id: "170", content: "Kubernetes" },
                 { type: "skills", id: "180", content: "Jenkins" },
-                { type: "skills", id: "190", content: "Maven" },
                 { type: "skills", id: "100", content: "Splunk" },
                 { type: "skills", id: "210", content: "Agile Workflow" },
                 { type: "skills", id: "220", content: "Atlassian Suite" },
@@ -73,11 +68,9 @@ class Resume extends React.Component {
                 { type: "languages", id: "320", content: "Solidity" },
                 { type: "languages", id: "330", content: "Python" },
                 { type: "languages", id: "340", content: "Java" },
-
                 { type: "languages", id: "350", content: "OCaml" },
                 { type: "languages", id: "360", content: "ASM" },
-                { type: "languages", id: "370", content: "MQL" },
-                { type: "languages", id: "380", content: "SQL" },
+                
             ],
 
 
@@ -105,21 +98,38 @@ class Resume extends React.Component {
             ],
 
             projects: [
-                { type: "projects", id: "420", content: { what: "Recommender", details: "a prediction algorithm trained on a collected dataset" } },
-                { type: "projects", id: "430", content: { what: "BrunoCoin", details: "a non-optimized basic cryptocurrency- in class project" } },
-                { type: "projects", id: "440", content: { what: "Search", details: " an algorithm to index and query through a large database of information" } },
-                { type: "projects", id: "450", content: { what: "Shell", details: "an implementation of a shell interface" } },
+                {
+                    type: "projects", id: "510", content: {
+                        what: "Weenix", details: "An operating sytsem. Implemented processes and threads scheduling, device drivers, terminal emulation, a file system, a polymorphic file system support, and a virtual memory.",
+                        link: "https://github.com/brown-cs1690/handout/wiki/Weenix-Operating-System"
+                    }
+                },
+                {
+                    type: "projects", id: "500", content: {
+                        what: "Atlas Swings", details: "a Unity Game, winner of the 2022 NYC Game Jam by Geopipe",
+                        link: "https://itch.io/jam/new-york-new-york/results"
+                    }
+                },
+                {
+                    type: "projects", id: "450", content: {
+                        what: "Shell", details: "An implementation of a shell interface with ln, cd and rm functionality, file redirection, signal handling and multi process functionality"
+                    }
+                },
                 { type: "projects", id: "460", content: { what: "Variable Autoencoder on MNIST", details: "A Generative Adversarial Network generating new written numbers" } },
-                { type: "projects", id: "470", content: { what: "Snark", details: "a multiplayer Unity Game – ongoing" } },
-                { type: "projects", id: "480", content: { what: "Embedded Dress", details: "an embedded garment which lights up brighter with crowd interaction" } },
-                { type: "projects", id: "490", content: { what: "Augustine at Home", details: "a stealth Unity Game" } }
+                { type: "projects", id: "430", content: { what: "BrunoCoin", details: "a non-optimized basic cryptocurrency- in class project" } },
+                { type: "projects", id: "420", content: { what: "Recommender", details: "a prediction algorithm trained on a collected dataset" } },
+                { type: "projects", id: "440", content: { what: "Search", details: " an algorithm to index and query through a large database of information" } },
+                { type: "projects", id: "470", content: { what: "Snark", details: "a multiplayer online game built with React, Node and Express" } },
+                // { type: "projects", id: "480", content: { what: "Embedded Dress", details: "an embedded garment which lights up brighter with crowd interaction" } },
+                // { type: "projects", id: "490", content: { what: "Augustine at Home", details: "a stealth Unity Game" }},
+                
+                
             ],
             souvenir: [],
             selected: []
 
         }
     };
-
 
     getList = id => this.state[id];
 
@@ -204,28 +214,26 @@ class Resume extends React.Component {
 
         this.setState({
             classes: [
-                { type: "classes", id: "0", content: { name: "Deep Learning", grade: "A" } },
-                { type: "classes", id: "1", content: { name: "Cybersecurity and International Relations", grade: "A" } },
-                { type: "classes", id: "2", content: { name: "Computer Systems", grade: "A" } },
-                { type: "classes", id: "3", content: { name: "Blockchain Cryptocurrency", grade: "B" } },
-                { type: "classes", id: "4", content: { name: "Compilers and Program Analysis", grade: "A" } },
-                { type: "classes", id: "5", content: { name: "Embedded Software", grade: "A" } },
-                { type: "classes", id: "6", content: { name: "Software Security and Exploitation", grade: "A" } }
+                { type: "classes", id: "0", content: { name: "Operating Systems", grade: "A" } },
+                { type: "classes", id: "1", content: { name: "Deep Learning", grade: "A" } },
+                { type: "classes", id: "2", content: { name: "Cybersecurity and International Relations", grade: "A" } },
+                { type: "classes", id: "3", content: { name: "Computer Systems", grade: "A" } },
+                { type: "classes", id: "4", content: { name: "Blockchain Cryptocurrency", grade: "B" } },
+                { type: "classes", id: "5", content: { name: "Compilers and Program Analysis", grade: "A" } },
+                { type: "classes", id: "6", content: { name: "Embedded Software", grade: "A" } },
+                { type: "classes", id: "7", content: { name: "Software Security and Exploitation", grade: "A" } }
             ],
 
             skills: [
                 { type: "skills", id: "80", content: "React" },
                 { type: "skills", id: "90", content: "SpringBoot" },
                 { type: "skills", id: "100", content: "NodeJS" },
-                { type: "skills", id: "110", content: "MongoDB" },
-                { type: "skills", id: "120", content: "MySQL" },
                 { type: "skills", id: "130", content: "NumPy" },
                 { type: "skills", id: "140", content: "TensorFlow" },
                 { type: "skills", id: "150", content: "Git" },
                 { type: "skills", id: "160", content: "Docker" },
                 { type: "skills", id: "170", content: "Kubernetes" },
                 { type: "skills", id: "180", content: "Jenkins" },
-                { type: "skills", id: "190", content: "Maven" },
                 { type: "skills", id: "100", content: "Splunk" },
                 { type: "skills", id: "210", content: "Agile Workflow" },
                 { type: "skills", id: "220", content: "Atlassian Suite" },
@@ -245,11 +253,9 @@ class Resume extends React.Component {
                 { type: "languages", id: "320", content: "Solidity" },
                 { type: "languages", id: "330", content: "Python" },
                 { type: "languages", id: "340", content: "Java" },
-
                 { type: "languages", id: "350", content: "OCaml" },
                 { type: "languages", id: "360", content: "ASM" },
-                { type: "languages", id: "370", content: "MQL" },
-                { type: "languages", id: "380", content: "SQL" },
+
             ],
 
 
@@ -277,14 +283,32 @@ class Resume extends React.Component {
             ],
 
             projects: [
-                { type: "projects", id: "420", content: { what: "Recommender", details: "a prediction algorithm trained on a collected dataset" } },
-                { type: "projects", id: "430", content: { what: "BrunoCoin", details: "a non-optimized basic cryptocurrency- in class project" } },
-                { type: "projects", id: "440", content: { what: "Search", details: " an algorithm to index and query through a large database of information" } },
-                { type: "projects", id: "450", content: { what: "Shell", details: "an implementation of a shell interface" } },
+                {
+                    type: "projects", id: "510", content: {
+                        what: "Weenix", details: "An operating sytsem. Implemented processes and threads scheduling, device drivers, terminal emulation, a file system, a polymorphic file system support, and a virtual memory.",
+                        link: "https://github.com/brown-cs1690/handout/wiki/Weenix-Operating-System"
+                    }
+                },
+                {
+                    type: "projects", id: "500", content: {
+                        what: "Atlas Swings", details: "a Unity Game, winner of the 2022 NYC Game Jam by Geopipe",
+                        link: "https://itch.io/jam/new-york-new-york/results"
+                    }
+                },
+                {
+                    type: "projects", id: "450", content: {
+                        what: "Shell", details: "An implementation of a shell interface with ln, cd and rm functionality, file redirection, signal handling and multi process functionality"
+                    }
+                },
                 { type: "projects", id: "460", content: { what: "Variable Autoencoder on MNIST", details: "A Generative Adversarial Network generating new written numbers" } },
-                { type: "projects", id: "470", content: { what: "Snark", details: "a multiplayer Unity Game – ongoing" } },
-                { type: "projects", id: "480", content: { what: "Embedded Dress", details: "an embedded garment which lights up brighter with crowd interaction" } },
-                { type: "projects", id: "490", content: { what: "Augustine at Home", details: "a stealth Unity Game" } }
+                { type: "projects", id: "430", content: { what: "BrunoCoin", details: "a non-optimized basic cryptocurrency- in class project" } },
+                { type: "projects", id: "420", content: { what: "Recommender", details: "a prediction algorithm trained on a collected dataset" } },
+                { type: "projects", id: "440", content: { what: "Search", details: " an algorithm to index and query through a large database of information" } },
+                { type: "projects", id: "470", content: { what: "Snark", details: "a multiplayer online game built with React, Node and Express" } },
+                // { type: "projects", id: "480", content: { what: "Embedded Dress", details: "an embedded garment which lights up brighter with crowd interaction" } },
+                // { type: "projects", id: "490", content: { what: "Augustine at Home", details: "a stealth Unity Game" }},
+
+
             ],
             souvenir: [],
             selected: []

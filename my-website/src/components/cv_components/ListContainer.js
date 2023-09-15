@@ -33,6 +33,7 @@ class ListContainer extends React.Component {
             return <Projects
                 what={content.what}
                 details={content.details}
+                link={content.link}
             ></Projects>
         } else if (type == "languages") {
             return <Languages

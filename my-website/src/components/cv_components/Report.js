@@ -2,11 +2,11 @@
 import sclasses from "../souvenir.module.css";
 
 export default function Report(props) {
-    console.log("Svn: ");
-    console.log(props);
-    console.log(props.sortedSvn);
+    // console.log("Svn: ");
+    // console.log(props);
+    // console.log(props.sortedSvn);
 
-    console.log(props.sortedSvn["languages"]);
+    // console.log(props.sortedSvn["languages"]);
     return (
         <div id="report" className={sclasses.report} style={{ width: "100%" }}>
             <div className={sclasses.margin}>

@@ -12,7 +12,7 @@ import useWindowDimensions from '../utils/Resize.js';
 
 function Welcome2(props) {
     const { _, width } = useWindowDimensions();
-    console.log(width);
+
     return (
         width > 691 ?
             <div className={classes.bg}>
@@ -43,7 +43,7 @@ function Welcome2(props) {
                                 </div>
                             </div>
 
-                            <Box >
+                            {/* <Box >
                                 <div className={classes.shadow_display}></div>
                                 <div className={classes.scroll_display}>
 
@@ -79,7 +79,7 @@ function Welcome2(props) {
 
 
                                 </div>
-                            </Box>
+                            </Box> */}
 
                         </GridItem>
 

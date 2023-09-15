@@ -135,7 +135,6 @@ function Souvernir2(props) {
     var sortedSvn = sortSouvenirs(props.itemList);
     /* setSvn(sortSouvenirs(props.itemList)); */
     const { height, width } = useWindowDimensions();
-    console.log(document.getElementById('notes'));
 
     return (width < 1200 ? <div></div> :
         <div>

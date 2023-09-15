@@ -41,13 +41,11 @@ export default function Nav() {
             style={({ isActive }) => {
               return {
                 color: isActive ? "white" : "",
-                border: isActive ? "dotted 2px" : "none",
-                backgroundColor: isActive ? "rgb(33, 33, 33)" : "rgb(33, 33, 33)",
+                backgroundColor: isActive ? "rgb(50, 50, 50)" : "rgb(33, 33, 33)",
                 height: isActive ? "40px" : "40px",
                 borderRadius: isActive ? "5px" : "",
-
                 textDecoration: "none",
-
+                
               };
             }}
             className={classes.nav_items}
@@ -63,12 +61,12 @@ export default function Nav() {
             style={({ isActive }) => {
               return {
                 color: isActive ? "white" : "",
-                border: isActive ? "dotted 2px" : "none",
-                backgroundColor: isActive ? "rgb(33, 33, 33)" : "rgb(33, 33, 33)",
+                // borderBottom: isActive ? "dotted 2px" : "none",
+                backgroundColor: isActive ? "rgb(50, 50, 50)" : "rgb(33, 33, 33)",
                 height: isActive ? "40px" : "40px",
                 borderRadius: isActive ? "5px" : "",
                 textDecoration: "none",
-
+                
               };
             }}
             className={classes.nav_items}
@@ -117,11 +115,12 @@ export default function Nav() {
               style={({ isActive }) => {
                 return {
                   color: isActive ? "white" : "",
-                  border: isActive ? "dotted 2px" : "none",
-                  backgroundColor: isActive ? "rgb(33, 33, 33)" : "rgb(33, 33, 33)",
+                  // border: isActive ? "dotted 2px" : "none",
+                  backgroundColor: isActive ? "rgb(50, 50, 50)" : "rgb(33, 33, 33)",
                   height: isActive ? "40px" : "40px",
-                  borderRadius: isActive ? "5px" : "",
+                  // borderRadius: isActive ? "5px" : "",
                   textDecoration: "none",
+                  fontStyle: isActive ? 'italic' : ''
 
                 };
               }}
@@ -138,11 +137,12 @@ export default function Nav() {
               style={({ isActive }) => {
                 return {
                   color: isActive ? "white" : "",
-                  border: isActive ? "dotted 2px" : "none",
-                  backgroundColor: isActive ? "rgb(33, 33, 33)" : "rgb(33, 33, 33)",
+                  // border: isActive ? "dotted 2px" : "none",
+                  backgroundColor: isActive ? "rgb(50, 50, 50)" : "rgb(33, 33, 33)",
                   height: isActive ? "40px" : "40px",
-                  borderRadius: isActive ? "5px" : "",
+                  // borderRadius: isActive ? "5px" : "",
                   textDecoration: "none",
+                  fontStyle: isActive ? 'italic' : ''
 
                 };
               }}
@@ -225,8 +225,8 @@ export default function Nav() {
               style={({ isActive }) => {
                 return {
                   color: isActive ? "white" : "",
-                  border: isActive ? "dotted 2px" : "none",
-                  backgroundColor: isActive ? "rgb(33, 33, 33)" : "rgb(33, 33, 33)",
+                  // border: isActive ? "dotted 2px" : "none",
+                  backgroundColor: isActive ? "rgb(50, 50, 50)" : "rgb(33, 33, 33)",
                   height: isActive ? "40px" : "40px",
                   borderRadius: isActive ? "5px" : "",
                   textDecoration: "none",
@@ -246,8 +246,8 @@ export default function Nav() {
               style={({ isActive }) => {
                 return {
                   color: isActive ? "white" : "",
-                  border: isActive ? "dotted 2px" : "none",
-                  backgroundColor: isActive ? "rgb(33, 33, 33)" : "rgb(33, 33, 33)",
+                  // border: isActive ? "dotted 2px" : "none",
+                  backgroundColor: isActive ? "rgb(50, 50, 50)" : "rgb(33, 33, 33)",
                   height: isActive ? "40px" : "40px",
                   borderRadius: isActive ? "5px" : "",
                   textDecoration: "none",
@@ -273,18 +273,19 @@ export default function Nav() {
 
                 _hover={{
                   outline: "none",
-                  bg: "#212121",
-                  boxShadow: "0 0 15px rgb(255, 255, 255)",
+                  bg: "#353535",
+
+                  // boxShadow: "0 0 15px rgb(255, 255, 255)",
                   borderColor: "gray.300",
                 }}
                 _focus={{
                   outline: "none",
-                  bg: "#212121",
+                  bg: "#353535",
                 }}
                 _active={{
                   outline: "none",
-                  bg: "#212121",
-                  boxShadow: "0 0 15px rgb(255, 255, 255)",
+                  bg: "#353535",
+                  // boxShadow: "0 0 15px rgb(255, 255, 255)",
                   borderColor: "gray.300",
                 }}
               > {/* rightIcon={<ChevronDownIcon />} */}

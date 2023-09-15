@@ -21,10 +21,6 @@ class Welcome extends React.Component {
       <div className={classes.bg}>
         <div className={classes.mainPage}>
 
-
-
-
-
           <Grid
             w={"100%"}
             h={"100%"}
@@ -33,7 +29,7 @@ class Welcome extends React.Component {
             gap={4}
           >
 
-            <GridItem colSpan={5} rowSpan={6}>
+            <GridItem colSpan={5} rowSpan={6} style={{pointerEvents: 'none'}}>
 
               {<Image src={art4}></Image>}
 
@@ -52,16 +48,17 @@ class Welcome extends React.Component {
 
               <Box >
                 <div className={classes.scroll_display}>
+
                   <div className={classes.shadow_display}></div>
 
-                  <div className={classes.scroll_text}>
+                  {/* <div className={classes.scroll_text}>
                     <br></br>
                     <br></br>
                     I have always been a creator.
                     <br></br>
                     I am an illustrator,
                     <br></br>
-                    a fashion designer,
+                    a <a href="https://elisetienneco.wixsite.com/portfolio">fashion designer</a>,
                     <br></br>
                     a Dungeons and Dragons enthusiast...
                     <br></br>
@@ -70,18 +67,17 @@ class Welcome extends React.Component {
                     <br></br>
                     <br></br>
                     <div className={classes.spacer} />
-                    Studying computer science has only further expanded my ability to create, and with each new skill I learn I see this ability grow.
-
+                    Studying computer science has only further expanded my ability to create.
                     <div className={classes.spacer} />
-                    I chose computer science because I wanted to find a skill I would love to explore beyond the classroom or work,
+                    I chose this field and this career because I wanted skills to hone beyond the classroom or work,
                     <br></br>
-                    and find joy in truly mastering.
+                    and find joy in truly mastering. 
                     <br></br>
                     <br></br>
                     <br></br>
-                    Come along on my journey.
+                    Come along on this journey!
 
-                  </div>
+                  </div> */}
                   <div className={classes.spacer} />
 
 

@@ -22,8 +22,8 @@ class CollectionContainer extends React.Component {
         if (type == "classes") {
             return <Classes
                 name={content.name}
-                grade={content.grade}>
-                abbreviated={false}
+                grade={content.grade}
+                abbreviated={false}>
             </Classes>
         } else if (type == "skills") {
             return <Skills name={content}></Skills>
@@ -38,6 +38,7 @@ class CollectionContainer extends React.Component {
             return <Projects
                 what={content.what}
                 details={content.details}
+                link={content.link}
             ></Projects>
         } else if (type == "languages") {
             return <Languages

@@ -55,7 +55,6 @@ window.addEventListener("scroll", reveal);
 
 export default function CV(props) {
     const { height, width } = useWindowDimensions();
-    console.log(width);
     const num_columns = growColumns(width);
 
 
@@ -163,6 +162,8 @@ export default function CV(props) {
                     droppableId="projects"
                     col_target={Math.ceil(num_columns / 2)}
                 />
+
+               
             </Box>
 
 

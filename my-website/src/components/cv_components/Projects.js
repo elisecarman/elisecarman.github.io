@@ -11,7 +11,7 @@ class Projects extends React.Component {
   render() {
     return (
       this.props.abbreviated ?
-        <div className={classes.projects_abbr}>
+        <div className={classes.projects_abbr} >
           <Box>
             <div className={classes.pro_what}>
               {this.props.what}
@@ -23,9 +23,32 @@ class Projects extends React.Component {
             </div>
           </Box>
         </div>
+        : ((this.props.link !== undefined)?
+        <>
+          {/* <a position='absolute' href={this.props.link} > </a> */}
+          <div className={classes.projects2}>
+            <Box onClick={() => {
+              window.open(this.props.link, "_blank");
+              }}>
+              <div className={classes.pro_what}>
+                {this.props.what}
+              </div>
+
+              <div>
+                click me!
+              </div>
+              
+              <div className={classes.lil_dash_projects}>
+                <div className={classes.pro_details}>
+                  {this.props.details}
+                </div>
+              </div>
+            </Box>
+          </div>
+        </>
         :
         <div className={classes.projects}>
-          <Box>
+          <Box >
             <div className={classes.pro_what}>
               {this.props.what}
             </div>
@@ -35,8 +58,7 @@ class Projects extends React.Component {
               </div>
             </div>
           </Box>
-        </div>
-
+        </div>)
     );
   }
 }
