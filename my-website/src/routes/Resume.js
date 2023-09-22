@@ -98,30 +98,87 @@ class Resume extends React.Component {
             ],
 
             projects: [
-                {
+                { 
+                    type: "projects", id: "470", content: { 
+                        language: "JavaScript, HTML, CSS",
+                        team: "solo project",
+                        what: "Snark", 
+                        details: "a multiplayer online game built with React, Node and Express ",
+                        link: "snarkgame-b763b1c1250f.herokuapp.com" 
+                    } 
+                },
+
+                { 
                     type: "projects", id: "510", content: {
-                        what: "Weenix", details: "An operating sytsem. Implemented processes and threads scheduling, device drivers, terminal emulation, a file system, a polymorphic file system support, and a virtual memory.",
+                        language: "C",
+                        team: "class project",
+                        what: "Weenix", 
+                        details: "An operating sytsem with processes and threads scheduling, device drivers, terminal emulation, a file system, a polymorphic file system support, and a virtual memory ",
                         link: "https://github.com/brown-cs1690/handout/wiki/Weenix-Operating-System"
-                    }
+                        }
                 },
                 {
                     type: "projects", id: "500", content: {
-                        what: "Atlas Swings", details: "a Unity Game, winner of the 2022 NYC Game Jam by Geopipe",
+                        language: "JavaScript, HTML, CSS",
+                        team: "solo project",
+                        what: "Atlas Swings", 
+                        details: "a Unity Game, winner of the 2022 NYC Game Jam by Geopipe",
                         link: "https://itch.io/jam/new-york-new-york/results"
                     }
                 },
+                { 
+                    type: "projects", id: "490", content: { 
+                        language: "C#",
+                        team: "club project",
+                        what: "Augustine at Home", 
+                        details: "a stealth Unity Game",
+                        link: "https://brownrisdgames.itch.io/augustine-at-home" 
+                    } 
+                },
+
                 {
                     type: "projects", id: "450", content: {
-                        what: "Shell", details: "An implementation of a shell interface with ln, cd and rm functionality, file redirection, signal handling and multi process functionality"
+                        language: "C",
+                        team: "class project",
+                        what: "Shell", 
+                        details: "An implementation of a shell interface with ln, cd and rm functionality, file redirection, signal handling and multi process functionality"
                     }
                 },
-                { type: "projects", id: "460", content: { what: "Variable Autoencoder on MNIST", details: "A Generative Adversarial Network generating new written numbers" } },
-                { type: "projects", id: "430", content: { what: "BrunoCoin", details: "a non-optimized basic cryptocurrency- in class project" } },
-                { type: "projects", id: "420", content: { what: "Recommender", details: "a prediction algorithm trained on a collected dataset" } },
-                { type: "projects", id: "440", content: { what: "Search", details: " an algorithm to index and query through a large database of information" } },
-                { type: "projects", id: "470", content: { what: "Snark", details: "a multiplayer online game built with React, Node and Express" } },
+                { 
+                    type: "projects", id: "460", content: { 
+                        language: "Python",
+                        team: "class project",
+                        what: "Variable Autoencoder on MNIST", 
+                        details: "A Generative Adversarial Network generating new written numbers",
+                        link: "https://hackmd.io/@BrownDeepLearningS23/hw6p" 
+                    } 
+                },
+                { 
+                    type: "projects", id: "430", content: { 
+                        language: "Go Lang",
+                        team: "class project",
+                        what: "BrunoCoin", 
+                        details: "a non-optimized basic cryptocurrency- in class project ",
+                        link: "https://github.com/elisecarman/BrunoCoinStencil" 
+                    } 
+                },
+                // { 
+                //     type: "projects", id: "420", content: { 
+                //         language: "Java",
+                //         team: "class project",
+                //         what: "Recommender", 
+                //         details: "a prediction algorithm trained on a collected dataset " 
+                //     } 
+                // },
+                // { 
+                //     type: "projects", id: "440", content: { 
+                //         language: "Scala",
+                //         team: "class project",
+                //         what: "Search", 
+                //         details: " an algorithm to index and query through a large database of information " 
+                //     } 
+                // },
                 // { type: "projects", id: "480", content: { what: "Embedded Dress", details: "an embedded garment which lights up brighter with crowd interaction" } },
-                // { type: "projects", id: "490", content: { what: "Augustine at Home", details: "a stealth Unity Game" }},
                 
                 
             ],
@@ -284,29 +341,86 @@ class Resume extends React.Component {
 
             projects: [
                 {
+                    type: "projects", id: "470", content: {
+                        language: "JavaScript, HTML, CSS",
+                        team: "solo project",
+                        what: "Snark",
+                        details: "a multiplayer online game built with React, Node and Express ",
+                        link: "snarkgame-b763b1c1250f.herokuapp.com"
+                    }
+                },
+
+                {
                     type: "projects", id: "510", content: {
-                        what: "Weenix", details: "An operating sytsem. Implemented processes and threads scheduling, device drivers, terminal emulation, a file system, a polymorphic file system support, and a virtual memory.",
+                        language: "C",
+                        team: "class project",
+                        what: "Weenix",
+                        details: "An operating sytsem with processes and threads scheduling, device drivers, terminal emulation, a file system, a polymorphic file system support, and a virtual memory ",
                         link: "https://github.com/brown-cs1690/handout/wiki/Weenix-Operating-System"
                     }
                 },
                 {
                     type: "projects", id: "500", content: {
-                        what: "Atlas Swings", details: "a Unity Game, winner of the 2022 NYC Game Jam by Geopipe",
+                        language: "JavaScript, HTML, CSS",
+                        team: "solo project",
+                        what: "Atlas Swings",
+                        details: "a Unity Game, winner of the 2022 NYC Game Jam by Geopipe",
                         link: "https://itch.io/jam/new-york-new-york/results"
                     }
                 },
                 {
-                    type: "projects", id: "450", content: {
-                        what: "Shell", details: "An implementation of a shell interface with ln, cd and rm functionality, file redirection, signal handling and multi process functionality"
+                    type: "projects", id: "490", content: {
+                        language: "C#",
+                        team: "club project",
+                        what: "Augustine at Home",
+                        details: "a stealth Unity Game",
+                        link: "https://brownrisdgames.itch.io/augustine-at-home"
                     }
                 },
-                { type: "projects", id: "460", content: { what: "Variable Autoencoder on MNIST", details: "A Generative Adversarial Network generating new written numbers" } },
-                { type: "projects", id: "430", content: { what: "BrunoCoin", details: "a non-optimized basic cryptocurrency- in class project" } },
-                { type: "projects", id: "420", content: { what: "Recommender", details: "a prediction algorithm trained on a collected dataset" } },
-                { type: "projects", id: "440", content: { what: "Search", details: " an algorithm to index and query through a large database of information" } },
-                { type: "projects", id: "470", content: { what: "Snark", details: "a multiplayer online game built with React, Node and Express" } },
+
+                {
+                    type: "projects", id: "450", content: {
+                        language: "C",
+                        team: "class project",
+                        what: "Shell",
+                        details: "An implementation of a shell interface with ln, cd and rm functionality, file redirection, signal handling and multi process functionality"
+                    }
+                },
+                {
+                    type: "projects", id: "460", content: {
+                        language: "Python",
+                        team: "class project",
+                        what: "Variable Autoencoder on MNIST",
+                        details: "A Generative Adversarial Network generating new written numbers",
+                        link: "https://hackmd.io/@BrownDeepLearningS23/hw6p"
+                    }
+                },
+                {
+                    type: "projects", id: "430", content: {
+                        language: "Go Lang",
+                        team: "class project",
+                        what: "BrunoCoin",
+                        details: "a non-optimized basic cryptocurrency- in class project ",
+                        link: "https://github.com/elisecarman/BrunoCoinStencil"
+                    }
+                },
+                // {
+                //     type: "projects", id: "420", content: {
+                //         language: "Java",
+                //         team: "class project",
+                //         what: "Recommender",
+                //         details: "a prediction algorithm trained on a collected dataset "
+                //     }
+                // },
+                // {
+                //     type: "projects", id: "440", content: {
+                //         language: "Scala",
+                //         team: "class project",
+                //         what: "Search",
+                //         details: " an algorithm to index and query through a large database of information "
+                //     }
+                // },
                 // { type: "projects", id: "480", content: { what: "Embedded Dress", details: "an embedded garment which lights up brighter with crowd interaction" } },
-                // { type: "projects", id: "490", content: { what: "Augustine at Home", details: "a stealth Unity Game" }},
 
 
             ],

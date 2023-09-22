@@ -26,11 +26,11 @@ function growColumns(width) {
             return 4;
 
         case 5:
-            return 5;
+            return 4;
         case 6:
-            return 5;
+            return 4;
         default:
-            return 5;
+            return 4;
     }
 }
 
@@ -101,11 +101,18 @@ export default function CV(props) {
                                 </CollectionContainer>
 
                             </Box>
-                            <ListContainer
+                            {/* <ListContainer
                                 getItemStyle={props.getItemStyle}
                                 getListStyle={props.getListStyle}
                                 itemList={props.projects}
                                 droppableId="projects"
+                            /> */}
+                            <CollectionContainer
+                                getItemStyle={props.getItemStyle}
+                                getListStyle={props.getListStyle}
+                                itemList={props.projects}
+                                droppableId="projects"
+                                col_target={1}
                             />
 
                         </Flex>

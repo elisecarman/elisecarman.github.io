@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "../resume.module.css"
 import sclasses from "../souvenir.module.css"
-import { Text, Box, Flex, Spacer, Button, ButtonGroup } from '@chakra-ui/react';
+import { Text, Box, Flex, Spacer, Button, ButtonGroup, HStack } from '@chakra-ui/react';
 import ListContainer from "./ListContainer";
 import { Draggable, Droppable } from 'react-beautiful-dnd';
 import Classes from "./Classes";
@@ -38,6 +38,7 @@ function render_item(content, type) {
         ></Experiences>
     } else if (type == "projects") {
         return <Projects
+            content={content}
             what={content.what}
             details={content.details}
             abbreviated={true}
@@ -145,33 +146,36 @@ function Souvernir2(props) {
                     <div className={classes.so_name}> Elise Carman </div>
                     <Flex>
                         <Box>
-                            <div className={classes.so_grade}>Brown University</div>
-                            <div className={classes.so_grade}>expected graduation: December 2023 </div>
+                            <div className={classes.so_grade} style={{fontStyle: "italic", marginBottom: '20px'}}>Brown University</div>
+                            <div className={classes.so_grade}>Expected Graduation: December 2023 </div>
                         </Box>
                         <Spacer></Spacer>
-                        <div className={classes.so_gpa}> GPA: 3.84</div>
                     </Flex>
+                    {/* change */}
+                    <div className={classes.so_gpa}> GPA: 3.86</div>
+
 
                     {/* <textarea id="notes" name="textarea" className={classes.so_comment} placeholder={"Type in your thoughts"}>
                     </textarea> */}
 
-                    <Flex>
+                    <HStack marginTop={'30px'}>
+                        <Spacer/>
                         <div className={classes.buttons}
-                            onClick={props.handleReset}>
+                            // onClick={props.handleReset}
+                            >
                             <Button
-                                borderColor="#f08080"
+                                borderColor="#e6e6e6"
                                 borderStyle="dotted"
                                 borderWidth="2px"
                                 colorScheme='gray'
                                 variant='outline'
                                 fontSize={"15"}
-                                marginLeft={"5"}
                                 onClick={props.handleReset}
                                 _hover={{
-                                    bg: "#571915"
+                                    bg: "#3b3b3b"
                                 }}
                                 _active={{
-                                    bg: "#571915"
+                                    bg: "#3b3b3b"
                                 }}
                                 transition="0.3s"
                             >
@@ -179,31 +183,33 @@ function Souvernir2(props) {
                             </Button>
 
                         </div>
-                        <div className={classes.buttons}>
+                        <Spacer/>
+                        <div className={classes.buttons}
+                        >
                             <Button
-                                borderColor="#f08080"
+                                borderColor="#e6e6e6"
                                 borderStyle="dotted"
                                 borderWidth="2px"
                                 colorScheme='gray'
                                 variant='outline'
                                 fontSize={"15"}
-                                marginLeft={"5"}
                                 onClick={generatePDF}
                                 /*  {() => generatePDF(Svn)} */
                                 _hover={{
-                                    bg: "#571915"
+                                    bg: "#3b3b3b"
                                 }}
                                 _active={{
-                                    bg: "#571915"
+                                    bg: "#3b3b3b"
                                 }}
                                 transition="0.3s"
-                                rightIcon={<ArrowUpIcon />}>
+                                rightIcon={<ArrowUpIcon />}
+                                >
 
                                 Export
                             </Button>
                         </div>
-
-                    </Flex>
+                        <Spacer />
+                    </HStack>
 
 
                     <div className={classes.so_drop}>
@@ -253,7 +259,7 @@ function Souvernir2(props) {
                         <div className={sclasses.margin}>
                             <h1 align="center"> <b> Elise Carman</b> </h1>
                             <div align="center"> Expected Graduation: December 2023</div>
-                            <div align="center"> GPA: 3.84</div>
+                            <div align="center"> GPA: 3.86</div>
                             <div align="center">{getNotes().value}</div>
                             {(sortedSvn["skills"].length != 0 || sortedSvn["languages"].length != 0) ?
                                 <div align="center" class={sclasses.parent}>
@@ -309,7 +315,7 @@ function Souvernir2(props) {
                         <div className={sclasses.margin}>
                             <h1 align="center"> <b> Elise Carman</b> </h1>
                             <div align="center"> Expected Graduation: December 2023</div>
-                            <div align="center"> GPA: 3.84</div>
+                            <div align="center"> GPA: 3.86</div>
                             <div align="center" class={sclasses.parent}>
                                 {sortedSvn["languages"].length == 0 ?
                                     <div></div>

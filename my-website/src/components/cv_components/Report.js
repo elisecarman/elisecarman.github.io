@@ -12,7 +12,7 @@ export default function Report(props) {
             <div className={sclasses.margin}>
                 <h1 align="center"> <b> Elise Carman</b> </h1>
                 <div align="center"> Expected Graduation: December 2023</div>
-                <div align="center"> GPA: 3.84</div>
+                <div align="center"> GPA: 3.86</div>
                 <div align="center" class={sclasses.parent}>
                     {props.sortedSvn["languages"].length == 0 ?
                         <div></div>

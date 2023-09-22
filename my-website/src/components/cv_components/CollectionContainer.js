@@ -36,6 +36,7 @@ class CollectionContainer extends React.Component {
             ></Experiences>
         } else if (type == "projects") {
             return <Projects
+                content={content}
                 what={content.what}
                 details={content.details}
                 link={content.link}

@@ -36,6 +36,7 @@ class Souvenir extends React.Component {
             ></Experiences>
         } else if (type == "projects") {
             return <Projects
+                content={content}
                 what={content.what}
                 details={content.details}
             ></Projects>
@@ -64,8 +65,9 @@ class Souvenir extends React.Component {
                                 <div className={classes.so_grade}>expected graduation: December 2023 </div>
                             </Box>
                             <Spacer></Spacer>
-                            <div className={classes.so_gpa}> GPA: 3.84</div>
                         </Flex>
+                        {/* change */}
+                        <div className={classes.so_gpa}> GPA: 3.86</div>
 
                         <textarea className={classes.so_comment} placeholder={"Type in your thoughts"}>
                         </textarea>

@@ -231,6 +231,12 @@
     text-decoration: none;
 }
 
+.pro_footer {
+    padding: 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
 /* Souvenir */
 
 
@@ -245,41 +251,41 @@
 
 .so_name {
     font-size: 24px;
-    color: lightcoral;
+    color: #e6e6e6;
 }
 
 .so_grade {
     font-size: 16px;
-    color: lightcoral;
+    color: #e6e6e6;
     margin-bottom: 10px;
 }
 
 .so_gpa {
     margin-top: -1px;
-    font-size: 18px;
-    color: lightcoral;
+    font-size: 16px;
+    color: #e6e6e6;
 }
 
 .so_comment {
     height: 50px;
     width: 100%;
-    border: 1px dotted lightcoral;
+    border: 1px dotted #e6e6e6;
     /* width: 380px; */
     background-color: transparent;
-    color: lightcoral;
+    color: #e6e6e6;
 }
 
 .so_drop {
     height: 100%;
     width: 100%;
     max-width: 270px;
-    border: 2px dotted lightcoral;
+    border: 2px dotted #e6e6e6;
     border-radius: 5px;
     font-size: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
     transition: 0.3s;
-    color: lightcoral;
+    color: #e6e6e6;
     display: flex;
     text-align: center;
     position: relative;
@@ -288,34 +294,35 @@
 
 
 .so_drop:hover {
-    border: 2px dotted lightcoral;
+    border: 2px dotted #e6e6e6;
     /* color: rgb(255, 255, 255); */
     /* background-color: rbg(87, 25, 21); */
-    color: lightcoral;
-    background-color: rgb(87, 25, 21);
+    color: #e6e6e6;
+    background-color: rgb(59, 59, 59);
 }
 
 .isEmpty {
     width: "fill";
     height: "fill";
+    margin-top: 100px;
+    font-size: 40px;
+    font-style: italic;
 }
 
 .buttons {
     font-size: 20px;
-    margin: 10px 0px 0px 0px;
-    width: 100%;
-    justify-content: center;
+    /* margin: 10px 0px 0px 0px; */
     transition: 0.3s;
-    color: lightcoral;
+    color: #e6e6e6;
 }
 
-.buttons:hover {
+/* .buttons:hover {
     font-size: 20px;
     margin: 10px 0px 0px 0px;
     width: 100%;
     justify-content: center;
-    /* color: rgb(248, 206, 206); */
-}
+   
+} */
 
 
 

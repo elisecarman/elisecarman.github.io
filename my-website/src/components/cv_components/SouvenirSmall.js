@@ -22,12 +22,14 @@ function SouvernirSmall() {
                     <div className={classes.so_name}> Elise Carman </div>
                     <Flex>
                         <Box>
-                            <div className={classes.so_grade}>Brown University</div>
-                            <div className={classes.so_grade}>expected graduation: December 2023 </div>
+                            <div className={classes.so_grade} style={{fontStyle: 'italic', marginBottom: '20px'}}>Brown University</div>
+                            <div className={classes.so_grade}>Expected Graduation: December 2023 </div>
                         </Box>
                         <Spacer></Spacer>
-                        <div className={classes.so_gpa}> GPA: 3.84</div>
                     </Flex>
+                    {/* change */}
+                    <div className={classes.so_gpa}> GPA: 3.86</div>
+
 
                 </Box>
 
