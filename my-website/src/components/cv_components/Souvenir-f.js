@@ -227,7 +227,7 @@ function Souvernir2(props) {
                                 <div
                                     ref={provided.innerRef}
                                     style={props.getListStyle(snapshot.isDraggingOver)}>
-                                    {props.itemList.length == 0 ? <div className={classes.isEmpty}>Drop souvenirs here!</div> :
+                                    {props.itemList.length == 0 ? <div className={classes.isEmpty}>Drop takeaways here!</div> :
                                         props.itemList.map((item, index) => (
                                             <Draggable
                                                 key={item.id}

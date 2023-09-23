@@ -109,7 +109,7 @@ class Souvenir extends React.Component {
                                     <div
                                         ref={provided.innerRef}
                                         style={this.props.getListStyle(snapshot.isDraggingOver)}>
-                                        {this.props.itemList.length == 0 ? <div className={classes.isEmpty}>Drop souvenirs here!</div> :
+                                        {this.props.itemList.length == 0 ? <div className={classes.isEmpty}> Drop takeaways here!</div> :
                                             this.props.itemList.map((item, index) => (
                                                 <Draggable
                                                     key={item.id}
