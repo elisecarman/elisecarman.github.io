@@ -19,7 +19,7 @@ function SouvernirSmall() {
         <div id="report">
             <div className={classes.souvenir}>
                 <Box >
-                    <div className={classes.so_name}> Elise Carman </div>
+                    <div className={classes.so_name}>  Carman </div>
                     <Flex>
                         <Box>
                             <div className={classes.so_grade} style={{fontStyle: 'italic', marginBottom: '20px'}}>Brown University</div>

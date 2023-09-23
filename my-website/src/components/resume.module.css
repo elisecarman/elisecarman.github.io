@@ -298,7 +298,8 @@
     /* color: rgb(255, 255, 255); */
     /* background-color: rbg(87, 25, 21); */
     color: #e6e6e6;
-    background-color: rgb(59, 59, 59);
+    background-color: #2e2d2d;
+    /* background-color: rgb(59, 59, 59); */
 }
 
 .isEmpty {
