@@ -104,7 +104,7 @@ class Resume extends React.Component {
                         team: "solo project",
                         what: "Snark", 
                         details: "a multiplayer online game built with React, Node and Express ",
-                        link: "https://snarkgame-b763b1c1250f.herokuapp.com" 
+                        link: "https://snarkgame-b763b1c1250f.herokuapp.com/" 
                     } 
                 },
 
@@ -346,7 +346,7 @@ class Resume extends React.Component {
                         team: "solo project",
                         what: "Snark",
                         details: "a multiplayer online game built with React, Node and Express ",
-                        link: "https://snarkgame-b763b1c1250f.herokuapp.com"
+                        link: "https://snarkgame-b763b1c1250f.herokuapp.com/"
                     }
                 },
 
