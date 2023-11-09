@@ -28,7 +28,7 @@ function SouvernirSmall() {
                         <Spacer></Spacer>
                     </Flex>
                     {/* change */}
-                    <div className={classes.so_gpa}> GPA: 3.86</div>
+                    <div className={classes.so_gpa}> GPA: 3.9</div>
 
 
                 </Box>

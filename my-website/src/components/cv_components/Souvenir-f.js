@@ -161,7 +161,7 @@ function Souvernir2(props) {
                         <Spacer></Spacer>
                     </Flex>
                     {/* change */}
-                    <div className={classes.so_gpa}> GPA: 3.86</div>
+                    <div className={classes.so_gpa}> GPA: 3.9</div>
 
 
                     {/* <textarea id="notes" name="textarea" className={classes.so_comment} placeholder={"Type in your thoughts"}>
@@ -270,7 +270,7 @@ function Souvernir2(props) {
                         </div>
                         <div><h1>Sc.B. Computer Science at Brown University</h1></div>
                         <div> Expected Graduation: December 2023</div>
-                        <div> GPA: 3.86</div>
+                        <div> GPA: 3.9</div>
                         <div>{getNotes().value}</div>
                         {(sortedSvn["skills"].length != 0 || sortedSvn["languages"].length != 0) ?
                             
