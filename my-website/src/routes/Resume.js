@@ -85,11 +85,11 @@ class Resume extends React.Component {
                     }
                 },
 
-                { type: "experiences", id: "400", content: { where: "Anthem AI: Software Engineer Intern", when: "(February-April 2022)", what: ["Created a prototype for the UI of a medical information display tool using React, gaining familiarity with Electron Forge, CSS, JavaScript, HTML and TypeScript"] } },
+                { type: "experiences", id: "400", content: { where: "Elevance Health: Software Engineer Intern", when: "(February-April 2022)", what: ["Created a prototype for the UI of a medical information display tool using React, gaining familiarity with Electron Forge, CSS, JavaScript, HTML and TypeScript"] } },
 
                 {
                     type: "experiences", id: "410", content: {
-                        where: "Anthem AI: Software Engineer Intern", when: "(June-August 2021)",
+                        where: "Elevance Health: Software Engineer Intern", when: "(June-August 2021)",
                         what: ["Created a V0 prototype for the UI of a medical information display tool using XCode and Swift",
                             "Tested UX hypothesis and reported to a design leader, gaining familiarity with Avocode and Zeplin",
                             "Gained knowledge of Jira and Confluence software"]
@@ -327,11 +327,11 @@ class Resume extends React.Component {
                     }
                 },
 
-                { type: "experiences", id: "400", content: { where: "Anthem AI: Software Engineer Intern", when: "(February-April 2022)", what: ["Created a prototype for the UI of a medical information display tool using React, gaining familiarity with Electron Forge, CSS, JavaScript, HTML and TypeScript"] } },
+                { type: "experiences", id: "400", content: { where: "Elevance Health: Software Engineer Intern", when: "(February-April 2022)", what: ["Created a prototype for the UI of a medical information display tool using React, gaining familiarity with Electron Forge, CSS, JavaScript, HTML and TypeScript"] } },
 
                 {
                     type: "experiences", id: "410", content: {
-                        where: "Anthem AI: Software Engineer Intern", when: "(June-August 2021)",
+                        where: "Elevance Health: Software Engineer Intern", when: "(June-August 2021)",
                         what: ["Created a V0 prototype for the UI of a medical information display tool using XCode and Swift",
                             "Tested UX hypothesis and reported to a design leader, gaining familiarity with Avocode and Zeplin",
                             "Gained knowledge of Jira and Confluence software"]
