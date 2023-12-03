@@ -33,10 +33,12 @@ class Resume extends React.Component {
                 { type: "classes", id: "1", content: { name: "Deep Learning", grade: "A" } },
                 { type: "classes", id: "2", content: { name: "Cybersecurity and International Relations", grade: "A" } },
                 { type: "classes", id: "3", content: { name: "Computer Systems", grade: "A" } },
-                { type: "classes", id: "4", content: { name: "Blockchain Cryptocurrency", grade: "B" } },
+                { type: "classes", id: "4", content: { name: "Blockchains and Cryptocurrencies", grade: "B" } },
                 { type: "classes", id: "5", content: { name: "Compilers and Program Analysis", grade: "A" } },
-                { type: "classes", id: "6", content: { name: "Embedded Software", grade: "A" } },
-                { type: "classes", id: "7", content: { name: "Software Security and Exploitation", grade: "A" } }
+                { type: "classes", id: "6", content: { name: "Real Time and Embedded Software", grade: "A" } },
+                { type: "classes", id: "7", content: { name: "Software Security and Exploitation", grade: "A" } },
+                { type: "classes", id: "8", content: { name: "Design and Analysis of Algorithms", grade: "A" } },
+                { type: "classes", id: "9", content: { name: "Program Design with Data Structures and Algorithms", grade: "A" } }
             ],
 
             skills: [
@@ -103,7 +105,7 @@ class Resume extends React.Component {
                         language: "JavaScript, HTML, CSS",
                         team: "solo project",
                         what: "Snark", 
-                        details: "a multiplayer online game built with React, Node and Express ",
+                        details: "a multiplayer online game built with React, Node.js and Express ",
                         link: "https://snarkgame-b763b1c1250f.herokuapp.com/" 
                     } 
                 },
@@ -120,7 +122,7 @@ class Resume extends React.Component {
                 {
                     type: "projects", id: "500", content: {
                         language: "JavaScript, HTML, CSS",
-                        team: "solo project",
+                        team: "club project",
                         what: "Atlas Swings", 
                         details: "a Unity Game, winner of the 2022 NYC Game Jam by Geopipe",
                         link: "https://itch.io/jam/new-york-new-york/results"
@@ -149,7 +151,7 @@ class Resume extends React.Component {
                         language: "Python",
                         team: "class project",
                         what: "Variable Autoencoder on MNIST", 
-                        details: "A Generative Adversarial Network generating new written numbers",
+                        details: "A VAE generating new written numbers",
                         link: "https://hackmd.io/@BrownDeepLearningS23/hw6p" 
                     } 
                 },
@@ -158,7 +160,7 @@ class Resume extends React.Component {
                         language: "Go Lang",
                         team: "class project",
                         what: "BrunoCoin", 
-                        details: "a non-optimized basic cryptocurrency- in class project ",
+                        details: "a non-optimized basic cryptocurrency",
                         link: "https://github.com/elisecarman/BrunoCoinStencil" 
                     } 
                 },
@@ -275,10 +277,12 @@ class Resume extends React.Component {
                 { type: "classes", id: "1", content: { name: "Deep Learning", grade: "A" } },
                 { type: "classes", id: "2", content: { name: "Cybersecurity and International Relations", grade: "A" } },
                 { type: "classes", id: "3", content: { name: "Computer Systems", grade: "A" } },
-                { type: "classes", id: "4", content: { name: "Blockchain Cryptocurrency", grade: "B" } },
+                { type: "classes", id: "4", content: { name: "Blockchains and Cryptocurrencies", grade: "B" } },
                 { type: "classes", id: "5", content: { name: "Compilers and Program Analysis", grade: "A" } },
-                { type: "classes", id: "6", content: { name: "Embedded Software", grade: "A" } },
-                { type: "classes", id: "7", content: { name: "Software Security and Exploitation", grade: "A" } }
+                { type: "classes", id: "6", content: { name: "Real Time and Embedded Software", grade: "A" } },
+                { type: "classes", id: "7", content: { name: "Software Security and Exploitation", grade: "A" } },
+                { type: "classes", id: "8", content: { name: "Design and Analysis of Algorithms", grade: "A" } },
+                { type: "classes", id: "9", content: { name: "Program Design with Data Structures and Algorithms", grade: "A" } }
             ],
 
             skills: [
@@ -345,7 +349,7 @@ class Resume extends React.Component {
                         language: "JavaScript, HTML, CSS",
                         team: "solo project",
                         what: "Snark",
-                        details: "a multiplayer online game built with React, Node and Express ",
+                        details: "a multiplayer online game built with React, Node.js and Express ",
                         link: "https://snarkgame-b763b1c1250f.herokuapp.com/"
                     }
                 },
@@ -362,7 +366,7 @@ class Resume extends React.Component {
                 {
                     type: "projects", id: "500", content: {
                         language: "JavaScript, HTML, CSS",
-                        team: "solo project",
+                        team: "club project",
                         what: "Atlas Swings",
                         details: "a Unity Game, winner of the 2022 NYC Game Jam by Geopipe",
                         link: "https://itch.io/jam/new-york-new-york/results"
@@ -391,7 +395,7 @@ class Resume extends React.Component {
                         language: "Python",
                         team: "class project",
                         what: "Variable Autoencoder on MNIST",
-                        details: "A Generative Adversarial Network generating new written numbers",
+                        details: "A VAE generating new written numbers",
                         link: "https://hackmd.io/@BrownDeepLearningS23/hw6p"
                     }
                 },
@@ -400,7 +404,7 @@ class Resume extends React.Component {
                         language: "Go Lang",
                         team: "class project",
                         what: "BrunoCoin",
-                        details: "a non-optimized basic cryptocurrency- in class project ",
+                        details: "a non-optimized basic cryptocurrency",
                         link: "https://github.com/elisecarman/BrunoCoinStencil"
                     }
                 },
