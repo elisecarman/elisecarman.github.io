@@ -42,7 +42,14 @@ class Welcome extends React.Component {
                   <div style={{ fontSize: 40 }}>Welcome</div>
                   My name is Elise Carman
                   <br></br>
-                  I am a software developer at Brown University
+                  <br></br>
+                  I am a software developer
+                  <div style = {{height : '9px'}}></div> 
+                  and a master's student specializing 
+                  <br></br>
+                  in Natural Language Processing
+                  <br></br>
+                  at Brown University
                 </div>
               </div>
 

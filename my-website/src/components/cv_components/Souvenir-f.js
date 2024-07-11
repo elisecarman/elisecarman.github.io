@@ -152,16 +152,22 @@ function Souvernir2(props) {
 
             <div className={classes.souvenir}>
                 <Box >
-                    <div className={classes.so_name}> Elise Carman </div>
+                    <div className={classes.so_name} style={{ marginBottom: '20px' }}> Elise Carman </div>
                     <Flex>
                         <Box>
-                            <div className={classes.so_grade} style={{fontStyle: "italic", marginBottom: '20px'}}>Brown University</div>
-                            <div className={classes.so_grade}>Expected Graduation: December 2023 </div>
+                            <div className={classes.so_grade} style={{ fontStyle: "italic", marginBottom: '2px' }}>✿ Master's degree in AI </div>
+                            <div className={classes.so_grade} style={{ marginBottom: '-3px' }}>Brown University </div>
+                            <div className={classes.so_grade} style={{  marginBottom: '20px' }}>Expected Graduation: May 2025 </div>
+                            <div className={classes.so_grade} style={{ fontStyle: "italic", marginBottom: '2px' }}>✿ Bachelor's degree in Computer Science </div>
+                            <div className={classes.so_grade} style={{  marginBottom: '-3px' }}>Brown University </div>
+                            <div className={classes.so_gpa}> Undergraduate GPA: 3.9</div>
+                            {/* <div className={classes.so_grade} style={{ fontStyle: 'italic', marginBottom: '20px' }}>Master's and Bachelor's degrees <br></br>at Brown University</div>
+                            <div className={classes.so_grade}>Expected Master's Graduation: May 2025 </div>
+                            <div className={classes.so_gpa}> Undegraduate GPA: 3.9</div> */}
                         </Box>
-                        <Spacer></Spacer>
+                        
                     </Flex>
                     {/* change */}
-                    <div className={classes.so_gpa}> GPA: 3.9</div>
 
 
                     {/* <textarea id="notes" name="textarea" className={classes.so_comment} placeholder={"Type in your thoughts"}>
@@ -264,13 +270,15 @@ function Souvernir2(props) {
                 <div id="report" className={sclasses.report}>
                     <div className={sclasses.margin} style={{maxWidth: '380px'}}>
                         <div style={{width:'380px'}}></div>
-                        <div style={{display: 'flex'}}>
-                        <h1 style={{fontSize: '25px', marginBottom: '5px'}}> <b> Elise Carman</b> </h1>
-                            <h1 align="right" style={{ fontSize: '20px', marginTop:'8px', marginLeft: '38x' }}> <b><i> resume takeaways</i></b> </h1>
-                        </div>
+                        {/* <div style={{display: 'flex'}}> */}
+                        <h1 align="center" style={{fontSize: '25px', marginBottom: '5px'}}> <b> Elise Carman</b> </h1>
+                        <h1 align="center" style={{ fontSize: '14px', marginTop:'px', marginLeft: '45x', marginBottom:'9px' }}> <b><i> resume takeaways</i></b> </h1>
+                        {/* </div> */}
                         <div><h1>Sc.B. Computer Science at Brown University</h1></div>
-                        <div> Expected Graduation: December 2023</div>
-                        <div> GPA: 3.9</div>
+                        <div><h1>M.S. Artificial Intelligence at Brown University</h1></div>
+                            <div style= {{height:'4px'}}></div>
+                        <div> <h1>Expected Graduation: May 2025</h1></div>
+                        <div> <h1>Undergraduate GPA: 3.9</h1></div>
                         <div>{getNotes().value}</div>
                         {(sortedSvn["skills"].length != 0 || sortedSvn["languages"].length != 0) ?
                             
